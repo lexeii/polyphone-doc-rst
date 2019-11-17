@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Using custom releases in an instrument &#8212; Polyphone 2.2 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="How to prepare a sample" href="how-to-prepare-a-sample.html" />
+    <link rel="prev" title="Create a soundfont from scratch" href="create-a-soundfont-from-scratch.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="how-to-prepare-a-sample.html" title="How to prepare a sample"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="create-a-soundfont-from-scratch.html" title="Create a soundfont from scratch"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Polyphone 2.2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Tutorials</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="using-custom-releases-in-an-instrument">
+<span id="custom-releases"></span><h1>Using custom releases in an instrument<a class="headerlink" href="#using-custom-releases-in-an-instrument" title="Permalink to this headline">¶</a></h1>
+<p>The purpose of this tutorial is to create expressive instruments using looped
+samples whose releases have been recorded. You will learn how to fully use the
+capabilities of such a sample, by using the attack and sustain of the sample
+but also its release.</p>
+<div class="section" id="traditional-release-vs-custom-release">
+<h2>Traditional release vs custom release<a class="headerlink" href="#traditional-release-vs-custom-release" title="Permalink to this headline">¶</a></h2>
+<p>When you trigger a note you will hear first the beginning of the sample (the
+attack) and then, as long as you don’t release the key, the loop within the
+sample will be played again and again (the sustained phase). When you release
+the key, the loop will still be used and the sound will progressively be
+attenuated until you cannot hear it anymore. This is the traditional way to do
+a release with soundfonts: easy to set but ignoring transient harmonics that
+could occur during the real release of an acoustic instrument. This type of
+release can be viewed as a simple extension of the sustained phase.</p>
+<p>A more realistic release would be to use the real release provided by the
+recorded sample. The attack and sustained phase will be done the same way but
+when the key is released the sustained phase will suddenly drop, leaving room
+for the recorded release that will begin to sound. A custom release is used
+instead of extending the sound of the sustained phase, adding details to the
+sound.</p>
+<p>Creating such an instrument is made by splitting the problem in two:</p>
+<ul class="simple">
+<li><p>first defining the attack and sustained phase,</p></li>
+<li><p>then triggering the release.</p></li>
+</ul>
+<p>The example that will be taken here is the sound of a trumpet in an organ, for
+its high harmonic content and audible progression.</p>
+</div>
+<div class="section" id="sample-preparation">
+<h2>Sample preparation<a class="headerlink" href="#sample-preparation" title="Permalink to this headline">¶</a></h2>
+<p>Two cases may appear: you have a file comprising the full sample from the
+attack to the release, or you have an additional file containing only the
+release that has been already extracted.</p>
+<div class="section" id="full-sample-with-release">
+<h3>Full sample with release<a class="headerlink" href="#full-sample-with-release" title="Permalink to this headline">¶</a></h3>
+<p>Load the sample twice in Polyphone and then, in the second instance of the
+sample, remove everything in the sample except the release. The removal can be
+done by using the key <kbd class="kbd docutils literal notranslate">Alt</kbd> and then defining an area on the
+<a class="reference internal" href="../manual/soundfont-editor/editing-pages/sample-editor.html#sample-editor-graph"><span class="std std-ref">sample graph</span></a>. To find the point where the release
+begins, play the sample several times and try to define the point where you
+think no more power was inducing the sound. This last part will be the release.
+Then follow the instructions below.</p>
+</div>
+<div class="section" id="separate-sample-and-release">
+<h3>Separate sample and release<a class="headerlink" href="#separate-sample-and-release" title="Permalink to this headline">¶</a></h3>
+<p>Samples for the example:
+<a class="reference download external" download="" href="https://www.polyphone-soundfonts.com/downloads/tutorials/trumpet.wav"><code class="xref download docutils literal notranslate"><span class="pre">sample</span> <span class="pre">1</span></code></a>,
+<a class="reference download external" download="" href="https://www.polyphone-soundfonts.com/downloads/tutorials/trumpet-release.wav"><code class="xref download docutils literal notranslate"><span class="pre">sample</span> <span class="pre">2</span></code></a>.</p>
+<p>If you have 2 samples, the first one containing the beginning and the sustained
+phase of the sound and the second one containing the release, you only need to
+make sure that the release begins with a very short blank (a couple of points)
+being close to 0. A short inaudible loop will thus be made with this portion.</p>
+<p>Tune and loop the first sample as explained
+<a class="reference internal" href="how-to-prepare-a-sample.html#how-to-prepare-a-sample"><span class="std std-ref">here</span></a>.</p>
+<p>Loop the second sample on a very short part at the beginning, for example from
+the point 1 to the point 2 or 3. Specify the same root key and correction than
+the first sample.</p>
+</div>
+</div>
+<div class="section" id="first-instrument-attack-and-sustained-phase">
+<h2>First instrument: attack and sustained phase<a class="headerlink" href="#first-instrument-attack-and-sustained-phase" title="Permalink to this headline">¶</a></h2>
+<p>Create a first instrument with the samples comprising the attack and the
+sustained phase of the sound. Configure the global division this way:</p>
+<ul class="simple">
+<li><p>choose the loop option in loop playback (2nd choice),</p></li>
+<li><p>specify 0.01s in the volume envelop release (very short release).</p></li>
+</ul>
+<p>Now you have an instrument comprising no releases.</p>
+</div>
+<div class="section" id="second-instrument-release">
+<h2>Second instrument: release<a class="headerlink" href="#second-instrument-release" title="Permalink to this headline">¶</a></h2>
+<p>Create a second instrument for the release comprising the release samples with
+a very short blank loop at the beginning. Configure it this way:</p>
+<ul class="simple">
+<li><p>choose the loop option + release in loop playback (3rd choice),</p></li>
+<li><p>select a high number such as 100 seconds in the volume envelop release so
+that the release is not attenuated,</p></li>
+<li><p>determine approximately the duration of the attack in the first sample and
+use this value in the volume envelop attack.</p></li>
+</ul>
+<p>Now you have an instrument remaining silent as long as you don’t release a key,
+and then you can hear the release phase. You could also notice that a very fast
+shot on a key will trigger the release in an attenuated way. This is barely
+noticeable here with the example since the attack of a trumpet is very fast.
+The duration of the attack has been slightly augmented in the example.</p>
+</div>
+<div class="section" id="merging-both-instruments">
+<h2>Merging both instruments<a class="headerlink" href="#merging-both-instruments" title="Permalink to this headline">¶</a></h2>
+<p>Create a preset using these two instruments. The first instrument is heard when
+a key is triggered and the second instrument is triggered when the key is
+released. You can then listen to the result and try to make a smoother
+transition between the sustained phase and the release:</p>
+<ul class="simple">
+<li><p>by attenuating the first or second instrument,</p></li>
+<li><p>by increasing the release duration of the first instrument.</p></li>
+</ul>
+<p>The result with the example files is
+<a class="reference download external" download="" href="https://www.polyphone-soundfonts.com/downloads/tutorials/custom%20release.sf2"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
+<p>You can listen here the differences between a classical and a custom release:</p>
+<ul class="simple">
+<li><p><a class="reference download external" download="" href="https://www.polyphone-soundfonts.com/downloads/tutorials/classic-release.mp3"><code class="xref download docutils literal notranslate"><span class="pre">classic</span> <span class="pre">release</span></code></a></p></li>
+<li><p><a class="reference download external" download="" href="https://www.polyphone-soundfonts.com/downloads/tutorials/custom-release.mp3"><code class="xref download docutils literal notranslate"><span class="pre">custom</span> <span class="pre">release</span></code></a></p></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo-sidebar.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Using custom releases in an instrument</a><ul>
+<li><a class="reference internal" href="#traditional-release-vs-custom-release">Traditional release vs custom release</a></li>
+<li><a class="reference internal" href="#sample-preparation">Sample preparation</a><ul>
+<li><a class="reference internal" href="#full-sample-with-release">Full sample with release</a></li>
+<li><a class="reference internal" href="#separate-sample-and-release">Separate sample and release</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#first-instrument-attack-and-sustained-phase">First instrument: attack and sustained phase</a></li>
+<li><a class="reference internal" href="#second-instrument-release">Second instrument: release</a></li>
+<li><a class="reference internal" href="#merging-both-instruments">Merging both instruments</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="create-a-soundfont-from-scratch.html"
+                        title="previous chapter">Create a soundfont from scratch</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="how-to-prepare-a-sample.html"
+                        title="next chapter">How to prepare a sample</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/tutorials/using-custom-releases-in-an-instrument.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="how-to-prepare-a-sample.html" title="How to prepare a sample"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="create-a-soundfont-from-scratch.html" title="Create a soundfont from scratch"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Polyphone 2.2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Tutorials</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Polyphone.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,405 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Instrument editor &#8212; Polyphone 2.2 documentation</title>
+    <link rel="stylesheet" href="../../../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Preset editor" href="preset-editor.html" />
+    <link rel="prev" title="Sample editor" href="sample-editor.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="preset-editor.html" title="Preset editor"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="sample-editor.html" title="Sample editor"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Polyphone 2.2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >User manual</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../index.html" >Soundfont editor</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="index.html" accesskey="U">Editing pages</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="instrument-editor">
+<span id="id1"></span><h1>Instrument editor<a class="headerlink" href="#instrument-editor" title="Permalink to this headline">¶</a></h1>
+<p>When clicking on one or more instrument(s) in the <a class="reference internal" href="../tree.html#tree"><span class="std std-ref">tree</span></a>,
+the editing page of instruments appears.</p>
+<p>This page comprises several parts:</p>
+<ul class="simple">
+<li><p>the <a class="reference internal" href="#instrument-editor-table">table</a>,</p></li>
+<li><p>the <a class="reference internal" href="#instrument-editor-range">range editor</a> when the button
+“<span class="guilabel">Edit ranges</span>” from the <a class="reference internal" href="../toolbar.html#toolbar-view"><span class="std std-ref">toolbar</span></a> is clicked,</p></li>
+<li><p>the <a class="reference internal" href="#instrument-editor-envelope">envelope editor</a> when the button
+“<span class="guilabel">Edit envelope</span>” from the <a class="reference internal" href="../toolbar.html#toolbar-view"><span class="std std-ref">toolbar</span></a>
+is clicked,</p></li>
+<li><p>the <a class="reference internal" href="#instrument-editor-modulator">modulator section</a>.</p></li>
+</ul>
+<div class="figure align-default">
+<img alt="Instrument page" src="../../../_images/edit_instrument.png" />
+</div>
+<p>If only one instrument is selected, the page allows the editing of the global
+parameters of the instrument and the parameters of all its divisions.</p>
+<p>In the case where several instruments are selected, the global parameters
+of each of these instruments can be edited.</p>
+<div class="figure align-default">
+<img alt="Instrument page with multiple instruments selected" src="../../../_images/edit_multiple_instruments.png" />
+</div>
+<div class="section" id="table">
+<span id="instrument-editor-table"></span><h2>Table<a class="headerlink" href="#table" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="presentation">
+<h3>Presentation<a class="headerlink" href="#presentation" title="Permalink to this headline">¶</a></h3>
+<p>The table allows a global view and the editing of an instrument configuration.
+A change of a parameter in the “global” division applies to all divisions,
+except for divisions whose same parameter is already specified.</p>
+<p>The editable parameters are:</p>
+<dl class="field-list">
+<dt class="field-odd">Key range</dt>
+<dd class="field-odd"><p>Key range for which the sound will be heard.</p>
+</dd>
+<dt class="field-even">Velocity range</dt>
+<dd class="field-even"><p>Velocity range for which the sound will be heard.
+It is possible to set different sounds for the same note, with different
+velocity ranges (to distinguish different nuances of a piano key
+for example).</p>
+</dd>
+<dt class="field-odd">Attenuation</dt>
+<dd class="field-odd"><p>Attenuation in decibel applied to the sample.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The sf2 format doesn’t allow this value to be negative, no amplification
+is thus possible.</p>
+</div>
+</dd>
+<dt class="field-even">Pan</dt>
+<dd class="field-even"><p>Balance applied to the sound, to hear it to the left or to the right
+in stereo.</p>
+</dd>
+<dt class="field-odd">Loop playback</dt>
+<dd class="field-odd"><p><img alt="loop off" src="../../../_images/loop_off.png" /> indicates a sound reproduced with no loop,</p>
+<p><img alt="loop on" src="../../../_images/loop_on.png" /> indicates a sound which loops continuously,</p>
+<p><img alt="loop on with end" src="../../../_images/loop_on_end.png" /> indicates a sound which loops for the duration of key
+depression and then proceeds to play the remainder of the sample.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The sf2 format had no plans for a special playback mode which triggers
+a sample when a key is released. One way to achieve this behavior
+is to double each sample with a sample containing a short silent loop
+followed by the sound to emit on the release. The added sample
+will be read with the playback parameter “loop on with end”.</p>
+</div>
+</dd>
+<dt class="field-even">Root key</dt>
+<dd class="field-even"><p>Allows you to change the normal root key of a sample to a different
+note from that usually used.</p>
+</dd>
+<dt class="field-odd">Tuning</dt>
+<dd class="field-odd"><p>Change the tuning in semitones and cents of semitones. Changing
+“scale” plays on the difference between two consecutive notes.</p>
+</dd>
+<dt class="field-even">Filter</dt>
+<dd class="field-even"><p>Apply a low-pass filter, by specifying the cutoff frequency
+and the resonance.</p>
+</dd>
+<dt class="field-odd">Volume envelope</dt>
+<dd class="field-odd"><p>Change the volume envelope, and possibly how it changes
+with the note.</p>
+</dd>
+<dt class="field-even">Modulation</dt>
+<dd class="field-even"><p>Set a modulation (envelope, delay, frequency, changes
+with the note) and its effect on the tone, filter and volume.</p>
+</dd>
+<dt class="field-odd">Vibrato</dt>
+<dd class="field-odd"><p>Set a vibrato (time, frequency) and its effect on the tone.</p>
+</dd>
+<dt class="field-even">Exclusive class</dt>
+<dd class="field-even"><p>This parameter can define one or more exclusive classes,
+by assigning a set of sounds within a class the same parameter value other
+than 0. When an exclusive class is defined, any note triggered from one
+of the sounds of the exclusive class ends all the other sounds of the same
+class. The scope of an exclusive class is the preset in which the class
+is defined (a sound triggered in an instrument will end a sound of another
+instrument if the two instruments are in the same preset). This effect
+can be used for percussion instruments like a cymbal. Basically playing
+one note automatically terminates another in the same group.</p>
+</dd>
+<dt class="field-odd">Chorus and reverb</dt>
+<dd class="field-odd"><p>Indicates the intensity of chorus and reverb effects.
+The effects are configurable in the software
+<a class="reference internal" href="../../settings.html#sound-settings"><span class="std std-ref">settings</span></a>.</p>
+</dd>
+<dt class="field-even">Fixed key and velocity</dt>
+<dd class="field-even"><p>Can freeze the key and velocity on the key range
+specified by the linked sample.</p>
+</dd>
+<dt class="field-odd">Offsets</dt>
+<dd class="field-odd"><p>Changes the positions of the start and end of a sound during
+playback, as well as the start and end of the loop. The unit of an offset
+is samples (number of values).</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="editing-facilities-in-the-table">
+<h3>Editing facilities in the table<a class="headerlink" href="#editing-facilities-in-the-table" title="Permalink to this headline">¶</a></h3>
+<p>To facilitate and speed up editing in the table, the following features
+have been implemented:</p>
+<ul class="simple">
+<li><p>the mouse wheel may be used to change a value (the cell has to be in edit
+mode first),</p></li>
+<li><p>a keyboard can be used to set the rootkey, key range and velocity range
+(the cell has to be in edit mode first),</p></li>
+<li><p>a multiple selection, followed by the editing of the last cell, will edit
+all cells simultaneously,</p></li>
+<li><p>the keys <kbd class="kbd docutils literal notranslate">Del</kbd> and <kbd class="kbd docutils literal notranslate">Backspace</kbd> clear the content of all selected
+cells,</p></li>
+<li><p>stereo divisions may be edited simultaneously if the option is enables
+in the software <a class="reference internal" href="../../settings.html#general-settings"><span class="std std-ref">preferences</span></a>,</p></li>
+<li><p>key names may be numeric or as a text (having C3, C4 or C5 as middle C),
+depending on the option chosen in the
+<a class="reference internal" href="../../settings.html#interface-settings"><span class="std std-ref">preferences</span></a>,</p></li>
+<li><p>copy / paste / cut of a set of cells (not necessarily adjacent) may be done
+via <kbd class="kbd docutils literal notranslate">Ctrl+C</kbd> / <kbd class="kbd docutils literal notranslate">Ctrl+V</kbd> / <kbd class="kbd docutils literal notranslate">Ctrl+X</kbd>.</p></li>
+</ul>
+<p>Do not forget the <a class="reference internal" href="../tools/instrument-tools.html#instrument-tools"><span class="std std-ref">tools</span></a> available! In particular
+the tool allowing a <a class="reference internal" href="../tools/instrument-tools.html#instrument-tool-global"><span class="std std-ref">key-based configuration</span></a>.</p>
+</div>
+<div class="section" id="possibility-to-mute-divisions">
+<h3>Possibility to mute divisions<a class="headerlink" href="#possibility-to-mute-divisions" title="Permalink to this headline">¶</a></h3>
+<p>For testing purposes, it is possible to mute a division or mute all divisions
+but one in the tables. The options are accessible with a right click
+on the header of a division.</p>
+<div class="figure align-default">
+<img alt="Mute divisions in a table" src="../../../_images/table_mute_divisions.png" />
+</div>
+</div>
+</div>
+<div class="section" id="key-range-editor">
+<span id="instrument-editor-range"></span><h2>Key range editor<a class="headerlink" href="#key-range-editor" title="Permalink to this headline">¶</a></h2>
+<p>The key range editor allows you to quickly and graphically dispose samples
+according to their key and velocity ranges. This graph further highlights
+configuration problems, such as zones free of samples or unwanted
+superpositions.</p>
+<div class="figure align-default">
+<img alt="Key range editor" src="../../../_images/edit_range.png" />
+</div>
+<p>Each sample is represented by a rectangle. The color is semitransparent,
+so that the superposition of several elements is identifiable.</p>
+<div class="section" id="rectangle-selection">
+<h3>Rectangle selection<a class="headerlink" href="#rectangle-selection" title="Permalink to this headline">¶</a></h3>
+<p>A simple left click on a rectangle will select it and removes all other
+selections. If several rectangles are superimposed, consecutive clicks change
+the selection under the mouse cursor.</p>
+<p>A multiple selection is possible:</p>
+<ul class="simple">
+<li><p>by maintaining button <kbd class="kbd docutils literal notranslate">Ctrl</kbd> and then clicking on the different
+rectangles to select one by one,</p></li>
+<li><p>by using button <kbd class="kbd docutils literal notranslate">Shift</kbd>: all rectangles between the first rectangle
+being clicked and the next one will be selected.</p></li>
+</ul>
+</div>
+<div class="section" id="updating-the-rectangles">
+<h3>Updating the rectangles<a class="headerlink" href="#updating-the-rectangles" title="Permalink to this headline">¶</a></h3>
+<p>After having selected one or more rectangle(s), it is possible with the left
+button to:</p>
+<ul class="simple">
+<li><p>change the size, when you grab one of the edges of a rectangle;</p></li>
+<li><p>change the position, by pointing to the center of a rectangle.</p></li>
+</ul>
+<p>If several rectangles are selected, all changes are made synchronously.</p>
+</div>
+<div class="section" id="drag-zoom">
+<h3>Drag &amp; zoom<a class="headerlink" href="#drag-zoom" title="Permalink to this headline">¶</a></h3>
+<p>Maintaining the right click allows you to change the zoom around the selected
+point.</p>
+<p>Maintaining the left click allows you to move the graphic if the initial point
+is not on a rectangle.</p>
+</div>
+</div>
+<div class="section" id="envelope-editor">
+<span id="instrument-editor-envelope"></span><h2>Envelope editor<a class="headerlink" href="#envelope-editor" title="Permalink to this headline">¶</a></h2>
+<p>The envelope editor provides a graphical overview of the 8 parameters defining
+the volume envelope and the 8 parameters defining the modulation envelope.
+This is thus a tool for better understanding the impact of each of these
+parameters.</p>
+<div class="figure align-default">
+<img alt="Envelope editor" src="../../../_images/edit_envelope.png" />
+</div>
+<p>The buttons above the graph select alternatively the volume envelope (displayed
+in green) or the modulation envelope (displayed in red) for the editing. During
+the editing of the modulation envelope, the volume envelope is displayed with
+a thin line.</p>
+<p>The left part of the graph represents the evolution of the envelope when a key
+is <strong>triggered</strong>. 7 of the 8 parameters are involved in this representation:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Delay</dt>
+<dd class="field-odd"><p>duration during which the envelope remains at 0 just after a key
+is triggered,</p>
+</dd>
+<dt class="field-even">Attack</dt>
+<dd class="field-even"><p>duration after <strong>delay</strong> during which the envelope grows from 0
+to the maximum value,</p>
+</dd>
+<dt class="field-odd">Hold</dt>
+<dd class="field-odd"><p>duration after <strong>attack</strong> during which the envelope keeps its maximum
+value,</p>
+</dd>
+<dt class="field-even">Decay</dt>
+<dd class="field-even"><p>duration after <strong>hold</strong> during which the envelope progressively goes
+from the maximum value to the value specified by <strong>sustain</strong>,</p>
+</dd>
+<dt class="field-odd">Sustain</dt>
+<dd class="field-odd"><p>value after <strong>decay</strong> sustained as long as the triggered key
+is not released,</p>
+</dd>
+<dt class="field-even">Key → Hold</dt>
+<dd class="field-even"><p>change of the <strong>hold</strong> duration depending on the key (see below),</p>
+</dd>
+<dt class="field-odd">Key → Decay</dt>
+<dd class="field-odd"><p>change of the <strong>decay</strong> duration depending on the key
+(see below).</p>
+</dd>
+</dl>
+<p>A positive value in <strong>Key → XXX</strong> gradually decreases the duration of XXX
+toward the trebles, whereas a negative value does the opposite. For instance:</p>
+<ul class="simple">
+<li><p>value 100 halve the duration of XXX per octave above middle C (60)
+and double the duration of XXX per octave below middle C,</p></li>
+<li><p>value -100 double the duration of XXX per octave above middle C (60)
+and halve the duration of XXX per octave above middle C.</p></li>
+</ul>
+<p>The right part represents the evolution of the envelope when a key
+is <strong>released</strong>. Only the <strong>release</strong> duration is involved in this
+representation. The envelope gradually returns to 0 during this duration.</p>
+<p>When only one division of an instrument is selected in the tree,
+the corresponding sound <a class="reference internal" href="sample-editor.html#sample-editor"><span class="std std-ref">sample</span></a> is displayed
+on the background. It is thus possible to better visualize the evolution
+of the envelope relative to the sample being played.</p>
+</div>
+<div class="section" id="modulators">
+<span id="instrument-editor-modulator"></span><h2>Modulators<a class="headerlink" href="#modulators" title="Permalink to this headline">¶</a></h2>
+<p>The lower section of the editing page of instruments is intended
+for the creation of modulators, globally for an instrument or for a particular
+division. When you play an instrument, a modulator listens to one or two MIDI
+signal(s) and modify one of the parameters in the table according
+to the mathematical rule configured. The output of a modulator can also be used
+as input to another modulator (this function appeared in version 2.04
+of <a class="reference internal" href="../../annexes/the-different-soundfont-formats.html#sf2-format"><span class="std std-ref">sf2 format</span></a> and may not be supported by some
+synthesizers).</p>
+<div class="figure align-default">
+<img alt="Modulator editor" src="../../../_images/modulator_editor_2.png" />
+</div>
+<p>Buttons on the left are made for:</p>
+<ul class="simple">
+<li><p>expanding / collapsing the modulator area,</p></li>
+<li><p>adding / removing a modulator,</p></li>
+<li><p>copying / pasting / duplicating one or more modulators.</p></li>
+</ul>
+<p>When a modulator is added, the border of the corresponding cell in the table
+is thicker (see the tuning in the global column above).</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../index.html">
+              <img class="logo" src="../../../_static/logo-sidebar.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="../../../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Instrument editor</a><ul>
+<li><a class="reference internal" href="#table">Table</a><ul>
+<li><a class="reference internal" href="#presentation">Presentation</a></li>
+<li><a class="reference internal" href="#editing-facilities-in-the-table">Editing facilities in the table</a></li>
+<li><a class="reference internal" href="#possibility-to-mute-divisions">Possibility to mute divisions</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#key-range-editor">Key range editor</a><ul>
+<li><a class="reference internal" href="#rectangle-selection">Rectangle selection</a></li>
+<li><a class="reference internal" href="#updating-the-rectangles">Updating the rectangles</a></li>
+<li><a class="reference internal" href="#drag-zoom">Drag &amp; zoom</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#envelope-editor">Envelope editor</a></li>
+<li><a class="reference internal" href="#modulators">Modulators</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="sample-editor.html"
+                        title="previous chapter">Sample editor</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="preset-editor.html"
+                        title="next chapter">Preset editor</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/manual/soundfont-editor/editing-pages/instrument-editor.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="preset-editor.html" title="Preset editor"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="sample-editor.html" title="Sample editor"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Polyphone 2.2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >User manual</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../index.html" >Soundfont editor</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="index.html" >Editing pages</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Polyphone.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1.
+    </div>
+  </body>
+</html>

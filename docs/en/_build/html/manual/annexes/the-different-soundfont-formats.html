@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>The different soundfont formats &#8212; Polyphone 2.2 documentation</title>
+    <link rel="stylesheet" href="../../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Command line" href="command-line.html" />
+    <link rel="prev" title="Annexes" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="command-line.html" title="Command line"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Annexes"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Polyphone 2.2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >User manual</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">Annexes</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="the-different-soundfont-formats">
+<span id="sf-formats"></span><h1>The different soundfont formats<a class="headerlink" href="#the-different-soundfont-formats" title="Permalink to this headline">¶</a></h1>
+<p>Polyphone can deal with several soundfont formats:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#sf2-format">sf2</a>,</p></li>
+<li><p><a class="reference internal" href="#sf3-format">sf3</a>,</p></li>
+<li><p><a class="reference internal" href="#sfz-format">sfz</a>,</p></li>
+<li><p><a class="reference internal" href="#sfark-format">sfArk</a>.</p></li>
+</ul>
+<div class="section" id="sf2-soundfonts">
+<span id="sf2-format"></span><h2>Sf2 soundfonts<a class="headerlink" href="#sf2-soundfonts" title="Permalink to this headline">¶</a></h2>
+<p>Sf2 soundfonts are the main files edited by Polyphone. Each sf2 file comprises
+one or more musical virtual instruments, made of audio samples and a lot
+of parameters. Parameters define how the samples should be played throughout
+the keyboard, possibly modulated by predefined signals
+(<a class="reference internal" href="../soundfont-editor/editing-pages/instrument-editor.html#instrument-editor-modulator"><span class="std std-ref">modulators</span></a>). Sf2 files are built
+according to a 3-level structure:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../soundfont-editor/editing-pages/sample-editor.html#sample-editor"><span class="std std-ref">samples</span></a>, coming from a trumpet or a piano
+for instance,</p></li>
+<li><p><a class="reference internal" href="../soundfont-editor/editing-pages/instrument-editor.html#instrument-editor"><span class="std std-ref">instruments</span></a>, made of samples,</p></li>
+<li><p><a class="reference internal" href="../soundfont-editor/editing-pages/preset-editor.html#preset-editor"><span class="std std-ref">presets</span></a>, made of instruments.</p></li>
+</ul>
+<p>Further to the definition and setting of these elements, a sf2 file contains
+also <a class="reference internal" href="../soundfont-editor/editing-pages/editing-of-the-general-information.html#edit-general"><span class="std std-ref">general information</span></a> (the author, copyright or edit
+time for instance).</p>
+<p>Soundfonts are used by software synthesizers, such as Fluidsynth, using wave
+tables and driven by
+<abbr title="Musical Instrument Digital Interface">MIDI</abbr>
+signals. It is also possible to use sf2 soundfonts to listen
+<abbr title="Musical Instrument Digital Interface">MIDI</abbr>
+files with <a class="reference external" href="https://sourceforge.net/projects/timidity">TiMidity</a>, <a class="reference external" href="https://www.mindwerks.net/projects/wildmidi">WildMIDI</a> or QuickTime and listen scores with <a class="reference external" href="https://musescore.org/">MuseScore</a>.
+Hardware such as samplers, soundcards or even synthesizers may also support the
+.sf2 format.</p>
+<p>Further information on soundfonts may be found for example on
+<a class="reference external" href="https://en.wikipedia.org/wiki/SoundFont">Wikipedia</a>.
+The sf2 specifications are available
+<a class="reference external" href="https://www.polyphone-soundfonts.com/downloads/sf_specifications_v2.01.pdf">here</a>
+for version 2.01 and
+<a class="reference external" href="https://www.polyphone-soundfonts.com/downloads/sf_specifications_v2.04.pdf">there</a>
+for version 2.04.</p>
+</div>
+<div class="section" id="sf3-soundfonts">
+<span id="sf3-format"></span><h2>Sf3 soundfonts<a class="headerlink" href="#sf3-soundfonts" title="Permalink to this headline">¶</a></h2>
+<p>The sf3 format, developed by <a class="reference external" href="https://musescore.org/">MuseScore</a>, is similar in all respects to the
+sf2 format except that the <a class="reference internal" href="../soundfont-editor/editing-pages/sample-editor.html#sample-editor"><span class="std std-ref">samples</span></a> are stored in the
+OGG format (like the MP3 format but open source) instead of being stored as raw
+data. The consequence is that the sf3 format is about 10 times lighter than
+the sf2 format for a comparable quality.</p>
+<p>A soundfont exported in this format is not intended to be edited later because
+successive compressions would result in a lower sound quality. This format
+should be seen as a final product and is very interesting for all end users
+of soundfonts in that:</p>
+<ul class="simple">
+<li><p>downloads are made easier on internet,</p></li>
+<li><p>space is saved in computers,</p></li>
+<li><p>the combination midi + sf3 provides a lightweight and powerful solution
+to play soundtracks (video games, mobile applications, …).</p></li>
+</ul>
+<p>Unlike the <a class="reference external" href="http://www.fmjsoft.com/fmt/sf2pack.htm">sf2pack</a> format which answers the same issues, the sf3 format
+is entirely open-source. The source code is available, thus ensuring
+its sustainability (let’s avoid the mistakes done with sfArk or sfPack!).</p>
+</div>
+<div class="section" id="sfz-soundfonts">
+<span id="sfz-format"></span><h2>Sfz soundfonts<a class="headerlink" href="#sfz-soundfonts" title="Permalink to this headline">¶</a></h2>
+<p>The sfz format has the same goal than the sf2 format: create a musical
+instrument by disposing and configuring samples over the keyboard. The main
+difference is that while the sf2 format is only 1 file that contains
+everything, the sfz format is a text file delivered with a set of .wav samples.
+Since it was meant to be editable by a human, the main advantage was to edit
+the file without the need of a complex editor. But an editor is still highly
+recommended for big instruments, the quantity of parameters can indeed be
+quickly discouraging. The sfz format is also not defined as strictly as the
+sf2 format: differences may appear in the way to edit and in the way to play
+an sfz instrument.</p>
+<div class="section" id="limitations-on-the-sfz-import">
+<h3>Limitations on the sfz import<a class="headerlink" href="#limitations-on-the-sfz-import" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Only opcodes having a counterpart in <a class="reference internal" href="../soundfont-editor/editing-pages/instrument-editor.html#instrument-editor-table"><span class="std std-ref">tables</span></a>
+are imported.</p></li>
+<li><p>The envelope applied to pitch and filter being the same in sf2 files
+(Mod env), importing different envelopes for the pitch and filter
+is not possible (<code class="docutils literal notranslate"><span class="pre">fileg_*</span></code> and <code class="docutils literal notranslate"><span class="pre">pitcheg_*</span></code> opcodes).</p></li>
+<li><p>The LFO applied to volume and filter being the same in sf2 files (Mod LFO),
+importing different LFOs for the volume and filter is not possible
+(<code class="docutils literal notranslate"><span class="pre">amplfo_*</span></code> and <code class="docutils literal notranslate"><span class="pre">fillfo_*</span></code> opcodes).</p></li>
+<li><p>The only filter that can be imported is the second order low pass filter
+(<code class="docutils literal notranslate"><span class="pre">fil_type=lpf_2p</span></code>).</p></li>
+<li><p>To be imported correctly, “group” and “off_by” opcodes must contain the same
+value within the same group.</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>“width” and “position” opcodes may not be interpreted correctly.</p>
+</div>
+</div>
+<div class="section" id="limitations-on-the-sfz-export">
+<h3>Limitations on the sfz export<a class="headerlink" href="#limitations-on-the-sfz-export" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="../soundfont-editor/editing-pages/instrument-editor.html#instrument-editor-modulator"><span class="std std-ref">Modulators</span></a> are currently not exported.</p></li>
+<li><p>The sfz format (version 1) allowing only one pitch modulation,
+the two parameters “Vib LFO → pitch (c)” and “Mod LFO → pitch (c)”
+cannot be exported simultaneously.</p></li>
+<li><p>A loop 0-1 can be exported but is ignored by most of the sfz players.</p></li>
+<li><p>24-bit may not be supported in some synthesizers, please refer to their
+specification manual.</p></li>
+</ul>
+</div>
+<div class="section" id="in-general">
+<h3>In general<a class="headerlink" href="#in-general" title="Permalink to this headline">¶</a></h3>
+<p>The matching of sound levels (in dB), during the sfz / sf2 conversion process,
+has been tested with Sforzando software. There may however remain some
+differences.</p>
+<p>The way parameters change according to the key (via
+“key → Vol env hold / decay” and “key → Mod env hold / decay”) have no exact
+match. The sf2 format uses an exponential law to define the decay and hold
+durations according to the key, while the sfz format uses a linear law.</p>
+</div>
+</div>
+<div class="section" id="sfark-archives">
+<span id="sfark-format"></span><h2>SfArk archives<a class="headerlink" href="#sfark-archives" title="Permalink to this headline">¶</a></h2>
+<p>SfArk archives, like the sf3 format, is a compressed format. This means that
+the quality of the sounds is a bit lowered (but often imperceptible).
+This format tends to be obsolete, that’s why Polyphone only allows importing
+sfArk archives (not the export).</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../index.html">
+              <img class="logo" src="../../_static/logo-sidebar.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="../../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">The different soundfont formats</a><ul>
+<li><a class="reference internal" href="#sf2-soundfonts">Sf2 soundfonts</a></li>
+<li><a class="reference internal" href="#sf3-soundfonts">Sf3 soundfonts</a></li>
+<li><a class="reference internal" href="#sfz-soundfonts">Sfz soundfonts</a><ul>
+<li><a class="reference internal" href="#limitations-on-the-sfz-import">Limitations on the sfz import</a></li>
+<li><a class="reference internal" href="#limitations-on-the-sfz-export">Limitations on the sfz export</a></li>
+<li><a class="reference internal" href="#in-general">In general</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sfark-archives">SfArk archives</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Annexes</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="command-line.html"
+                        title="next chapter">Command line</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/manual/annexes/the-different-soundfont-formats.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="command-line.html" title="Command line"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Annexes"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Polyphone 2.2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >User manual</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >Annexes</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Polyphone.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1.
+    </div>
+  </body>
+</html>
