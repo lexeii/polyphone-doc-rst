@@ -10,9 +10,9 @@ This page comprises several parts:
 
 * the `table             <instrument editor table_>`_,
 * the `range editor      <instrument editor range_>`_ when the button
-  “:guilabel:`Edit ranges`” from the :ref:`toolbar <toolbar view>` is clicked,
+  :guilabel:`Edit ranges` from the :ref:`toolbar <toolbar view>` is clicked,
 * the `envelope editor   <instrument editor envelope_>`_ when the button
-  “:guilabel:`Edit envelope`” from the :ref:`toolbar <toolbar view>`
+  :guilabel:`Edit envelope` from the :ref:`toolbar <toolbar view>`
   is clicked,
 * the `modulator section <instrument editor modulator_>`_.
 

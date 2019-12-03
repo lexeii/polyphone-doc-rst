@@ -11,7 +11,7 @@ Similarly to the :ref:`instrument editor <instrument editor>`, several parts
 are present:
 
 * the table,
-* the range editor when the button “:guilabel:`Edit ranges`”
+* the range editor when the button :guilabel:`Edit ranges`
   of the :ref:`toolbar <toolbar view>` is clicked,
 * the modulator section.
 

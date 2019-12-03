@@ -64,7 +64,7 @@ Then, zoom around the beginning of the loop and try to superimpose the green
 Listening to the result
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-When the loop is configured, press “:guilabel:`play`” on the player
+When the loop is configured, press :guilabel:`play` on the player
 with the loop enabled to check the result.
 
 .. figure:: images/loop-sample-3.png
@@ -93,13 +93,13 @@ All samples have to be tuned if you don't want an out-of-tune instrument.
 By indicating in the soundfont the exact pitch of all imported samples,
 the soundfont will be able to adapt them to keys. Some samples may already have
 these information, in which case you shouldn't have to change the values
-in “:guilabel:`Root Key`” and “:guilabel:`Correction (cents)`”.
+in :guilabel:`Root Key` and :guilabel:`Correction (cents)`.
 But as a precaution it is always good to check.
 
 .. figure:: images/tune-sample-1.png
    :alt: Tune sample 1
 
-Enable the loop if the sample has one and press “:guilabel:`play`”
+Enable the loop if the sample has one and press :guilabel:`play`
 on the player. Then add the calibration sinus and adjust its volume so that
 you can hear both sounds as clearly as possible.
 
@@ -129,7 +129,7 @@ Here are examples containing the sound of a flute and a calibration sinus:
 To go further
 -------------
 
-Several tools are available in the menu “:guilabel:`Tools`”. You can edit
+Several tools are available in the menu :guilabel:`Tools`. You can edit
 samples by:
 
 * :ref:`removing blank <sample tool removeblank>` at start,

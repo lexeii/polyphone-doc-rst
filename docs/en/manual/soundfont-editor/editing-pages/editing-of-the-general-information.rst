@@ -4,7 +4,7 @@ Editing of the general information
 ==================================
 
 The page for editing the general information is displayed when the header
-“:guilabel:`General`” is selected in the :ref:`tree <tree>`.
+:guilabel:`General` is selected in the :ref:`tree <tree>`.
 This page is made of three kinds of elements:
 
 * `editable fields     <edit general fields_>`_,

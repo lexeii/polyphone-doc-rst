@@ -92,7 +92,7 @@ and the correction so that they match with the evaluation of the
 `frequency <sample editor frequency_>`_.
 
 Any change on a stereo sample may be applied on the linked sample if the option
-“:guilabel:`Stereo editing`” is ticked in the
+:guilabel:`Stereo editing` is ticked in the
 :ref:`preferences <general settings>`. Via a multiple selection
 in the :ref:`tree <tree>`, several samples may be edited simultaneously.
 
@@ -127,10 +127,10 @@ Equalizer
 
 The equalizer makes it possible to increase or decrease some frequencies,
 from -15 to 15 dB. It is possible to listen to the effect with the option
-“:guilabel:`preview`” enabled and then definitely apply the effect by pressing
-the “:guilabel:`Apply`” button. Pressing “:guilabel:`reset`” resets
+:guilabel:`preview` enabled and then definitely apply the effect by pressing
+the :guilabel:`Apply` button. Pressing :guilabel:`reset` resets
 all the buttons to 0 dB (but does not remove the effect on the sound: for that
-use the “:guilabel:`undo`” button in the :ref:`toolbar <toolbar>`).
+use the :guilabel:`undo` button in the :ref:`toolbar <toolbar>`).
 
 Any change on a stereo sample may be automatically applied on the linked sample
 if the option is checked in the :ref:`preferences <general settings>`.

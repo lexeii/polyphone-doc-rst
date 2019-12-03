@@ -28,7 +28,7 @@ Contents:
 Global tools
 ------------
 
-When the header “:guilabel:`General`” is selected in the :ref:`tree <tree>`,
+When the header :guilabel:`General` is selected in the :ref:`tree <tree>`,
 the tool menu is filled with :ref:`global tools <global tools>`.
 
 .. figure:: images/tool_menu_global.png

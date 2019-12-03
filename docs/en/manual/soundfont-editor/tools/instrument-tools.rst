@@ -91,8 +91,8 @@ In the case where a linear or exponential law is used, a left click in the
 graph defines the beginning of the linear or exponential area, a right click
 defines the end.
 
-The parameter to be modified is chosen in “:guilabel:`Parameter`”, and the
-modification type is chosen in “:guilabel:`Modification`”:
+The parameter to be modified is chosen in :guilabel:`Parameter`, and the
+modification type is chosen in :guilabel:`Modification`:
 
 :Addition: the modifier is added to the value of the selected parameter.
 :Multiplication: the modifier is multiplied with the value of the selected
@@ -177,7 +177,7 @@ of the instrument, are then as follows:
 * modification of the fine tuning if the transposition is performed by
   a number of semitones including decimals,
 * shift of the key range according to the number of semitones if
-  “:guilabel:`adapt key range`” is checked.
+  :guilabel:`adapt key range` is checked.
 
 .. figure:: images/tool_transpose_inst.png
    :alt: Transposition tool

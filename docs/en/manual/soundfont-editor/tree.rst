@@ -19,7 +19,7 @@ Structure
 ---------
 
 The structure of the tree is made of 4 headers and sub-content for the headers
-“:guilabel:`samples`”, “:guilabel:`instruments`” and “:guilabel:`presets`”.
+:guilabel:`Samples`, :guilabel:`Instruments` and :guilabel:`Presets`.
 
 .. figure:: images/tree_1.png
    :alt: Tree 1
@@ -27,7 +27,7 @@ The structure of the tree is made of 4 headers and sub-content for the headers
 Header “General”
 ^^^^^^^^^^^^^^^^
 
-A click on the header “:guilabel:`General`” opens the editor of the
+A click on the header :guilabel:`General` opens the editor of the
 :ref:`general information <edit general>`.
 
 Section “Samples”
@@ -37,7 +37,7 @@ This section lists all samples contained in the soundfont, which are the raw
 material upon which all instruments are built.
 A click on one or more samples leads to the
 :ref:`sample editor <sample editor>`.
-A click on the header “:guilabel:`Samples`” displays
+A click on the header :guilabel:`Samples` displays
 the :ref:`configuration summary <conf summ sample>` of all samples.
 
 Section “Instruments”
@@ -49,7 +49,7 @@ Instruments contain links to samples called “divisions”, displayed as a list
 below each instrument.
 A click on an instrument or on one of its divisions leads to the
 :ref:`instrument editor <instrument editor>`.
-A click on the header “:guilabel:`Instruments`” displays the
+A click on the header :guilabel:`Instruments` displays the
 :ref:`configuration summary <conf summ instrument>` of all instruments.
 
 Section “Presets”
@@ -60,7 +60,7 @@ a final elements made of instruments and that are accessible outside
 the soundfont. Presets contain links to instruments called “divisions”,
 displayed as a list below each preset. A click on a preset or on one
 of its divisions shows the :ref:`preset editor <preset editor>`. A click
-on the header “:guilabel:`Presets`” displays the
+on the header :guilabel:`Presets` displays the
 :ref:`configuration summary <conf summ preset>` of all presets.
 
 .. _tree menu:
@@ -112,7 +112,7 @@ Sample → instrument
   Association of the sample to the instrument, creation of an instrument
   division.
 
-Sample → header “:guilabel:`Instruments`”
+Sample → header :guilabel:`Instruments`
   Creation of an instrument that contains all samples dragged or creation of
   one instrument per sample dragged.
 
@@ -127,7 +127,7 @@ Instrument division → instrument or instrument division
   Copy of the division of the source instrument into the destination instrument
   (it can be the same instrument).
 
-Instrument → header “:guilabel:`Presets`”
+Instrument → header :guilabel:`Presets`
   Creation of a preset that contains all instruments dragged or creation of
   one preset per instrument dragged.
 

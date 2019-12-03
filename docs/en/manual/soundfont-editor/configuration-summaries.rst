@@ -4,8 +4,8 @@ Configuration summaries
 =======================
 
 The configuration summaries provide an overview of all elements contained in
-a soundfont. They are accessible via the headers “:guilabel:`Samples`”,
-“:guilabel:`Instruments`” et “:guilabel:`Presets`” in the :ref:`tree <tree>`,
+a soundfont. They are accessible via the headers :guilabel:`Samples`,
+:guilabel:`Instruments` et :guilabel:`Presets` in the :ref:`tree <tree>`,
 and allow the visualization of their corresponding elements.
 
 Information gathered in these pages can be used to support inspections within
@@ -16,7 +16,7 @@ large soundfonts.
 Samples
 -------
 
-When clicking on the “:guilabel:`Samples`” header of a soundfont in the
+When clicking on the :guilabel:`Samples` header of a soundfont in the
 :ref:`tree <tree>`, the sample configuration summary appears.
 
 .. figure:: images/conf_summary_sample.png
@@ -35,7 +35,7 @@ For each sample, this page allows for example to perform the following checks:
 Instruments
 -----------
 
-When clicking on the “:guilabel:`Instruments`” header of a soundfont in the
+When clicking on the :guilabel:`Instruments` header of a soundfont in the
 :ref:`tree <tree>`, the instrument configuration summary appears.
 
 .. figure:: images/conf_summary_instrument.png
@@ -56,7 +56,7 @@ checks:
 Presets
 -------
 
-When clicking on the “:guilabel:`Presets`” header of a soundfont in the
+When clicking on the :guilabel:`Presets` header of a soundfont in the
 :ref:`tree <tree>`, the preset configuration summary appears.
 
 .. figure:: images/conf_summary_preset.png

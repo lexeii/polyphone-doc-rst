@@ -18,7 +18,7 @@ from the :ref:`menu <menu shortcuts>`. They are divided into five sections:
 General
 -------
 
-The “:guilabel:`General`” section allows the modification of the following
+The :guilabel:`General` section allows the modification of the following
 parameters:
 
 :Audio back-end: Specifies the audio back-end used to play samples.
@@ -77,7 +77,7 @@ This section shows options related to the interface of the software:
 Sound
 -----
 
-The “:guilabel:`Sound`” section makes it possible to modify the chorus and
+The :guilabel:`Sound` section makes it possible to modify the chorus and
 reverb of the synth, along with its global volume. The global volume may be
 changed with the volume :abbr:`MIDI (Musical Instrument Digital Interface)`
 controller if an external keyboard is connected.
@@ -92,7 +92,7 @@ Virtual keyboard
 
 The keys of the computer keyboard used to control the
 :ref:`virtual keyboard <toolbar keyboard>` are defined in the
-“:guilabel:`Keyboard`” section. The pitch may be increased or decreased octave
+:guilabel:`Keyboard` section. The pitch may be increased or decreased octave
 by octave.
 
 .. figure:: images/settings_keyboard.png

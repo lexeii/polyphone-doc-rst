@@ -4,7 +4,7 @@ Create a soundfont from scratch
 ===============================
 
 To create a :ref:`soundfont <sf2 format>`, click
-on “:guilabel:`Create a soundfont`” in the :ref:`home screen <left part>`.
+on :guilabel:`Create a soundfont` in the :ref:`home screen <left part>`.
 Soundfonts are made from a 3-level structure, so the creation of a new
 soundfont involves three fundamental steps:
 
@@ -21,8 +21,8 @@ Sample loading
 ^^^^^^^^^^^^^^
 
 The sample preparation begins by **loading** .wav files. To do this first
-select the “:guilabel:`Samples`” category in the :ref:`tree <tree>` and select
-“:guilabel:`Import samples`” from the :ref:`toolbar <toolbar edit>`.
+select the :guilabel:`Samples` category in the :ref:`tree <tree>` and select
+:guilabel:`Import samples` from the :ref:`toolbar <toolbar edit>`.
 Samples may be obtained:
 
 * through Internet,
@@ -51,13 +51,13 @@ To assign loop points manually:
    The right loop point should be entered first (since the left point it
    by default at the position 0 and that it's not possible to assign a right
    point before the left point).
-#. press the “:guilabel:`Play`” button after having selected the loop function,
+#. press the :guilabel:`Play` button after having selected the loop function,
 #. adjust the start and / or end of the loop, while the sample is playing,
    until the transition between the two positions is as smooth as possible.
 
 .. note::
    To hear looping in an instrument, you must enter select |loop on|
-   in the “:guilabel:`Loop playback`” parameter row of either the Global
+   in the :guilabel:`Loop playback` parameter row of either the Global
    or individual notes columns in the
    :ref:`Parameters Table <instrument editor table>`.
 
@@ -73,7 +73,7 @@ Finally, a **tuning** has to be done. To do this, a calibration tool (Sinus)
 is available in the editing page of :ref:`samples <sample editor player>`.
 For each sample the method is as follows:
 
-#. begin the playback (press the “:guilabel:`play`” button), if possible with
+#. begin the playback (press the :guilabel:`play` button), if possible with
    loop function selected,
 #. select the sinus function,
 #. adjust the volume slider to hear the two sounds as clearly as possible,
@@ -107,7 +107,7 @@ for the creation of an instrument.
 Creating an instrument and adding samples
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-First, click on “:guilabel:`New instrument`” in the
+First, click on :guilabel:`New instrument` in the
 :ref:`toolbar <toolbar edit>`. A name must now be entered.
 
 Then add samples to the instrument using
@@ -179,7 +179,7 @@ samples.
 Creating a preset and adding instruments
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-First, click on “:guilabel:`New preset`” in the :ref:`toolbar <toolbar edit>`.
+First, click on :guilabel:`New preset` in the :ref:`toolbar <toolbar edit>`.
 A name must now be entered.
 
 Then add instruments to the preset using

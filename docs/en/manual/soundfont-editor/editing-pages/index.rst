@@ -7,7 +7,7 @@ When a soundfont is opened, the :ref:`tree <tree>` is filled with the content
 of the soundfont. The editors will appear to the right of the tree when
 elements are selected:
 
-* selecting the header “:guilabel:`General`” will show the editor
+* selecting the header :guilabel:`General` will show the editor
   of the :ref:`general information <edit general>`,
 * selecting one or more **samples** will show
   the :ref:`sample editor <sample editor>`,

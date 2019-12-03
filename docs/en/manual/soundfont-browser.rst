@@ -12,7 +12,7 @@ test and possibly re-use soundfonts.
 Browsing soundfonts
 -------------------
 
-To open the soundfont browser, click on “:guilabel:`Online repository`” or
+To open the soundfont browser, click on :guilabel:`Online repository` or
 write a keyword on the :ref:`home screen <home screen>`. Once the soundfont
 browser is open in a new tab, it is possible to search, sort and filter the
 results.
@@ -84,12 +84,12 @@ The description of a soundfont is made of:
 Download
 --------
 
-For downloading a file, click on the icon “:guilabel:`download`” next to its
-file name in the section “:guilabel:`Downloads`”. You will see the download
+For downloading a file, click on the icon :guilabel:`download` next to its
+file name in the section :guilabel:`Downloads`. You will see the download
 progress in a menu next to the main menu, at the top right corner of the
 software. Once a file is downloaded and if the file is a soundfont, it is
 possible to open it in a :ref:`soundfont editor <sf editor>` by clicking
-on the icon “:guilabel:`open`”.
+on the icon :guilabel:`open`.
 
 It is possible from the menu to clear the completed downloads.
 If everything is cleared, the download menu disappears.

@@ -22,10 +22,10 @@ Opening a soundfont
 
 Three ways for opening a soundfont:
 
-* a click on “:guilabel:`Open a file`” opens a file browser, the allowed file
+* a click on :guilabel:`Open a file` opens a file browser, the allowed file
   to select having the extension sf2, sf3, sfArk or sfz (the different formats
   are described :ref:`here <sf formats>`);
-* a click on “:guilabel:`Create a soundfont`” opens an empty soundfont,
+* a click on :guilabel:`Create a soundfont` opens an empty soundfont,
   everything is to be done from scratch;
 * a double-click on a soundfont from the history re-open it.
 
@@ -49,7 +49,7 @@ Right part
 Online repository
 ^^^^^^^^^^^^^^^^^
 
-A click on the button “:guilabel:`Online repository`” opens a tab
+A click on the button :guilabel:`Online repository` opens a tab
 with the :ref:`soundfont browser <sf browser>`.
 
 Daily soundfonts

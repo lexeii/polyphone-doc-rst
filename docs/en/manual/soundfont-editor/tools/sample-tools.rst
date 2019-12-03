@@ -68,12 +68,12 @@ To assign loop points automatically:
    * let the tool determine automatically a stable area by defining 0 as loop
      start and loop end,
 
-#. in the “:guilabel:`Tools`” menu select “:guilabel:`Sample`”,
-   “:guilabel:`Auto loop`”,
-#. press the “:guilabel:`Play`” button with the loop option checked,
+#. in the :guilabel:`Tools` menu select :guilabel:`Sample`,
+   :guilabel:`Auto loop`,
+#. press the :guilabel:`Play` button with the loop option checked,
 #. if the loop points found are not suitable you can :ref:`undo <toolbar edit>`
    the operation, try repositioning them manually around a stable area and then
-   use the “:guilabel:`Auto loop`” function again.
+   use the :guilabel:`Auto loop` function again.
 
 The tool needs to find a stable area of more than 0.25 seconds. If it fails,
 a warning message appears indicating that no loop can be found. In this case
@@ -118,7 +118,7 @@ everything is done automatically:
 
 #. download an editing software for wav files such as ``audacity`` or ``sweep``
    (Linux),
-#. use the tool “:guilabel:`External command`” for one or more samples,
+#. use the tool :guilabel:`External command` for one or more samples,
 #. fill the command line in the right field to call the external software
    (you may need to read the documentation of this software),
 #. edit the sample(s) with the external tool,
