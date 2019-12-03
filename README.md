@@ -3,7 +3,7 @@
 Here you'll find documentation grabbed from the official web site.
 
 - [x] Make rst versions of all the doc pages
-- [ ] Integrate with [Read the Docs]
+- [x] Integrate with [Read the Docs]: https://polyphone.readthedocs.io/
 - [ ] Translate into Russian
 
 
