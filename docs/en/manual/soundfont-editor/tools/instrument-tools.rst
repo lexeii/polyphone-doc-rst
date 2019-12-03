@@ -30,7 +30,8 @@ A logarithmic scale is available (take care of values equal to or less
 than 0!).
 
 .. figure:: images/tool_display_parameters.png
-   :alt: Display parameter tool
+
+   Display parameter tool
 
 .. _instrument tools fast:
 
@@ -52,7 +53,8 @@ increase the general volume), the attenuation of all divisions of all
 instruments can be decreased by 11 dB.
 
 .. figure:: images/tool_change_attenuation.png
-   :alt: Change attenuation tool
+
+   Change attenuation tool
 
 .. _instrument tool detune:
 
@@ -63,7 +65,8 @@ This feature slightly detunes the instrument notes, so as to create
 an undulating effect. The intensity of the effect is adjustable.
 
 .. figure:: images/tool_detune.png
-   :alt: Detuning tool
+
+   Detuning tool
 
 .. _instrument tool global:
 
@@ -74,7 +77,8 @@ This tool allows the editing of a parameter for all divisions of an instrument
 simultaneously.
 
 .. figure:: images/tool_keybased_configuration.png
-   :alt: Key-based configuration tool
+
+   Key-based configuration tool
 
 The graph represents the modification intensity, the first value on the left
 corresponding to the change applied to the division comprising the key 0, and
@@ -113,7 +117,8 @@ Release times are computed taking into account the first two parameters and a
 pitch modification may be added by using the third one.
 
 .. figure:: images/tool_natural_release.png
-   :alt: Natural release tool
+
+   Natural release tool
 
 .. _instrument tool position:
 
@@ -132,7 +137,8 @@ This feature spatializes sounds according to their pitch, which can be useful
 for a piano for example (bass and treble left to right).
 
 .. figure:: images/tool_sound_spatialization.png
-   :alt: Sound spatialization tool
+
+   Sound spatialization tool
 
 The bars in the graph represent each a string or pipe, having a length in
 relation to the pitch. The shortest bar corresponds to the highest note and the
@@ -180,7 +186,8 @@ of the instrument, are then as follows:
   :guilabel:`adapt key range` is checked.
 
 .. figure:: images/tool_transpose_inst.png
-   :alt: Transposition tool
+
+   Transposition tool
 
 .. _instrument tools mod:
 
@@ -196,7 +203,8 @@ Default modulators are automatically assigned to every instrument. This tool
 can create modulators that will override or disable them.
 
 .. figure:: images/tool_default_mod.png
-   :alt: Overriding tool
+
+   Overriding tool
 
 .. _instrument tool remove_mod:
 
@@ -224,7 +232,8 @@ Based on an instrument, this tool allows you to create all possible chords.
 This could be interesting for example for the creation of a choir or pads.
 
 .. figure:: images/tool_create_chords.png
-   :alt: Tool for creating chords
+
+   Tool for creating chords
 
 Here is an example,
 :download:`before <https://www.polyphone-soundfonts.com/downloads/tutorials/chord_base.mp3>`
@@ -246,7 +255,8 @@ divisions with the same parameters.
 It is also possible to duplicate the divisions according to velocity ranges.
 
 .. figure:: images/tool_division_duplication.png
-   :alt: Division duplication tool
+
+   Division duplication tool
 
 .. _instrument tool mixture:
 
@@ -259,7 +269,8 @@ divisions, and for each the list of the ranks. Types of possible ranks are very
 diverse, ranging from the octave to the 27th harmonic.
 
 .. figure:: images/tool_mixture.png
-   :alt: Mixture creation tool
+
+   Mixture creation tool
 
 To work, this tool relies on all samples associated to the selected instrument,
 the range defined for each sample and the corresponding attenuation. Samples

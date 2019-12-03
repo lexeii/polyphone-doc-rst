@@ -22,7 +22,8 @@ Once you have it, create a new soundfont with Polyphone
 (:menuselection:`File --> Import samples`).
 
 .. figure:: images/import-sample.png
-   :alt: Import sample
+
+   Import sample
 
 Loop
 ----
@@ -48,7 +49,8 @@ In the tree, click on the sample you want to loop and focus on the loop
 parameters.
 
 .. figure:: images/loop-sample-1.png
-   :alt: Loop sample 1
+
+   Loop sample: loop parameters
 
 If you are lucky, these values were packaged in the .wav sample and these
 fields are already filled. If not, or if it's been badly configured (this
@@ -59,7 +61,8 @@ Then, zoom around the beginning of the loop and try to superimpose the green
 (or red) and blue curves.
 
 .. figure:: images/loop-sample-2.png
-   :alt: Loop sample 2
+
+   Loop sample: wave alignment
 
 Listening to the result
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -68,7 +71,8 @@ When the loop is configured, press :guilabel:`play` on the player
 with the loop enabled to check the result.
 
 .. figure:: images/loop-sample-3.png
-   :alt: Loop sample 3
+
+   Loop sample: check the result
 
 If you don't hear the transition once the end of the loop is read, this means
 that the loop is good. Otherwise, keep the player on and slightly move the end
@@ -97,14 +101,16 @@ in :guilabel:`Root Key` and :guilabel:`Correction (cents)`.
 But as a precaution it is always good to check.
 
 .. figure:: images/tune-sample-1.png
-   :alt: Tune sample 1
+
+   Tune sample: pitch information
 
 Enable the loop if the sample has one and press :guilabel:`play`
 on the player. Then add the calibration sinus and adjust its volume so that
 you can hear both sounds as clearly as possible.
 
 .. figure:: images/tune-sample-2.png
-   :alt: Tune sample 2
+
+   Tune sample: play sample along with calibration signal
 
 Start the tuning by changing the root key until the two sounds most closely
 match. Continue by adjusting the correction. For this step, pay attention
@@ -124,7 +130,8 @@ Here are examples containing the sound of a flute and a calibration sinus:
    for this task and only your ears will find the right tune.
 
 .. figure:: images/tune-sample-3.png
-   :alt: Tune sample 3
+
+   Tune sample: frequency analysis
 
 To go further
 -------------
@@ -145,7 +152,8 @@ Stereo samples are made of two mono samples.The link is stored
 in the information of a sample.
 
 .. figure:: images/stereo-sample.png
-   :alt: Stereo sample
+
+   Stereo sample
 
 Managing two mono samples may add difficulty to loop them because a loop
 can sound fine for one side and not for the other. In that case, don't hesitate

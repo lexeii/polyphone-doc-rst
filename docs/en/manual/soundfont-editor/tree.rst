@@ -22,7 +22,8 @@ The structure of the tree is made of 4 headers and sub-content for the headers
 :guilabel:`Samples`, :guilabel:`Instruments` and :guilabel:`Presets`.
 
 .. figure:: images/tree_1.png
-   :alt: Tree 1
+
+   Tree: structure
 
 Header “General”
 ^^^^^^^^^^^^^^^^
@@ -93,7 +94,8 @@ A right click on an element shows a menu comprising the following actions:
   * delete character range.
 
 .. figure:: images/tree_2.png
-   :alt: Tree 2
+
+   Tree: context menu
 
 .. _tree dragdrop:
 
@@ -180,7 +182,8 @@ To facilitate the search for items in the tree, a search bar is available to
 filter.
 
 .. figure:: images/tree_3.png
-   :alt: Tree 3
+
+   Tree: search bar
 
 When a string is inserted into the search bar, the elements containing it are
 shown. Moreover:

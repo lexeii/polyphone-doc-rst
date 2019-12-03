@@ -64,7 +64,8 @@ To assign loop points manually:
    |loop on| turns it On, |loop off| or a blank turns it Off.
 
 .. figure:: images/loop_illustration.png
-   :alt: Loop illustration
+
+   Loop illustration
 
 Sample tuning
 ^^^^^^^^^^^^^

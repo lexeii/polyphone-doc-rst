@@ -15,7 +15,8 @@ This page is divided into several parts:
 * a sample `player           <sample editor player_>`_.
 
 .. figure:: images/edit_sample.png
-   :alt: Sample page
+
+   Sample page
 
 .. _sample editor graph:
 
@@ -61,7 +62,8 @@ Once an area is defined, a dialog appears to ask for a confirmation before
 cutting the sample.
 
 .. figure:: images/cutting_sample.png
-   :alt: Cutting sample
+
+   Cutting sample
 
 Colors of the graph
 ^^^^^^^^^^^^^^^^^^^
@@ -118,7 +120,8 @@ menu of the graph (right click). A :ref:`tool <sample tool peakfrequencies>`
 is also available to export peak information of all samples.
 
 .. figure:: images/fourier_graph.png
-   :alt: Fourier graph
+
+   Fourier graph
 
 .. _sample editor equalizer:
 

@@ -17,7 +17,8 @@ This page comprises several parts:
 * the `modulator section <instrument editor modulator_>`_.
 
 .. figure:: images/edit_instrument.png
-   :alt: Instrument page
+
+   Instrument page
 
 If only one instrument is selected, the page allows the editing of the global
 parameters of the instrument and the parameters of all its divisions.
@@ -26,7 +27,8 @@ In the case where several instruments are selected, the global parameters
 of each of these instruments can be edited.
 
 .. figure:: images/edit_multiple_instruments.png
-   :alt: Instrument page with multiple instruments selected
+
+   Instrument page with multiple instruments selected
 
 .. _instrument editor table:
 
@@ -132,7 +134,8 @@ but one in the tables. The options are accessible with a right click
 on the header of a division.
 
 .. figure:: images/table_mute_divisions.png
-   :alt: Mute divisions in a table
+
+   Mute divisions in a table
 
 .. _instrument editor range:
 
@@ -145,7 +148,8 @@ configuration problems, such as zones free of samples or unwanted
 superpositions.
 
 .. figure:: images/edit_range.png
-   :alt: Key range editor
+
+   Key range editor
 
 Each sample is represented by a rectangle. The color is semitransparent,
 so that the superposition of several elements is identifiable.
@@ -195,7 +199,8 @@ This is thus a tool for better understanding the impact of each of these
 parameters.
 
 .. figure:: images/edit_envelope.png
-   :alt: Envelope editor
+
+   Envelope editor
 
 The buttons above the graph select alternatively the volume envelope (displayed
 in green) or the modulation envelope (displayed in red) for the editing. During
@@ -251,7 +256,8 @@ of :ref:`sf2 format <sf2 format>` and may not be supported by some
 synthesizers).
 
 .. figure:: images/modulator_editor_2.png
-   :alt: Modulator editor
+
+   Modulator editor
 
 Buttons on the left are made for:
 

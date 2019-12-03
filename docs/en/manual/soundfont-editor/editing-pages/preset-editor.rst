@@ -16,7 +16,8 @@ are present:
 * the modulator section.
 
 .. figure:: images/edit_preset.png
-   :alt: Preset page
+
+   Preset page
 
 If only one preset is selected, the page allows the editing of the global
 parameters of the preset and the parameters of all its divisions.

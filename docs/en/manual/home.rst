@@ -10,7 +10,8 @@ The first screen of Polyphone is basically made of 3 parts:
 * a `top area`_, containing tabs and a menu.
 
 .. figure:: images/page_home.png
-   :alt: Home screen of Polyphone
+
+   Home screen of Polyphone
 
 .. _left part:
 

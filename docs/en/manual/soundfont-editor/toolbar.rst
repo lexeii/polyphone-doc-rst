@@ -11,7 +11,8 @@ The toolbar, located on the top of the editor, contains icons for:
 * displaying the `virtual keyboard <toolbar keyboard_>`_.
 
 .. figure:: images/toolbar.png
-   :alt: Toolbar
+
+   Toolbar
 
 .. _toolbar edit:
 
@@ -57,7 +58,8 @@ When clicking on the icon, a window opens showing the recorder that can record
 the output of Polyphone.
 
 .. figure:: images/recorder.png
-   :alt: Recorder
+
+   Recorder
 
 The left button can have two possible states:
 
@@ -84,7 +86,8 @@ triggers :abbr:`MIDI (Musical Instrument Digital Interface)` signals:
 * other :abbr:`MIDI` signals if the **MIDI controller part** is expanded.
 
 .. figure:: images/virtual_keyboard.png
-   :alt: Virtual keyboard
+
+   Virtual keyboard
 
 Piano keyboard
 ^^^^^^^^^^^^^^
@@ -151,7 +154,8 @@ displayed or hidden. If you are playing with modulators, it is advised
 that you use these features to test your soundfont.
 
 .. figure:: images/virtual_keyboard_2.png
-   :alt: Virtual keyboard with MIDI controllers
+
+   Virtual keyboard with MIDI controllers
 
 This area is made of different buttons:
 

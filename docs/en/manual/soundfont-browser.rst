@@ -18,7 +18,8 @@ browser is open in a new tab, it is possible to search, sort and filter the
 results.
 
 .. figure:: images/soundfont_browser_browsing.png
-   :alt: Browsing soundfonts
+
+   Browsing soundfonts
 
 Searching a soundfont
 ^^^^^^^^^^^^^^^^^^^^^
@@ -67,7 +68,8 @@ soundfonts. Connecting Polyphone to your account is possible in the
 :ref:`settings <repository settings>` of the software.
 
 .. figure:: images/soundfont_browser_description.png
-   :alt: Description page of a soundfont
+
+   Description page of a soundfont
 
 The description of a soundfont is made of:
 
@@ -95,4 +97,5 @@ It is possible from the menu to clear the completed downloads.
 If everything is cleared, the download menu disappears.
 
 .. figure:: images/soundfont_browser_download.png
-   :alt: Dowloading soundfonts
+
+   Dowloading soundfonts

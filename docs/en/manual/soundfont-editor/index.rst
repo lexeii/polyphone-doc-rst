@@ -16,7 +16,8 @@ containing a soundfont editor appears.
    tools/index
 
 .. figure:: images/soundfont_editor.png
-   :alt: Soundfont editor
+
+   Soundfont editor
 
 A soundfont editor is made of:
 

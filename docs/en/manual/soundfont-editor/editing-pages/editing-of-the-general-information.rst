@@ -11,8 +11,9 @@ This page is made of three kinds of elements:
 * `general information <edit general info_>`_ that are not editable,
 * `statistics          <edit general stats_>`_ about the soundfont.
 
-.. image:: images/edit_general.png
-   :alt: Global information page
+.. figure:: images/edit_general.png
+
+   Global information page
 
 .. _edit general fields:
 

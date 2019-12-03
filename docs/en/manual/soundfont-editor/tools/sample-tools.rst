@@ -29,7 +29,8 @@ samples, and the results can be exported in a .csv file. The peak frequencies
 are visible in the editing page of :ref:`samples <sample editor frequency>`.
 
 .. figure:: images/tool_show_peak_frequencies.png
-   :alt: Show peak frequencies
+
+   Show peak frequencies
 
 .. _sample tools files:
 
@@ -105,7 +106,8 @@ You can change the volume in three different ways:
   percentage of the maximum intensity.
 
 .. figure:: images/tool_change_volume.png
-   :alt: Change volume tool
+
+   Change volume tool
 
 .. _sample tool externalcommand:
 
@@ -127,7 +129,8 @@ everything is done automatically:
 #. the sample(s) will be automatically loaded into the soundfont.
 
 .. figure:: images/tool_external_command.png
-   :alt: External command tool
+
+   External command tool
 
 .. _sample tool filter:
 
@@ -140,7 +143,8 @@ a red area. Everything that is in this area will be removed: this means that
 you can manually decrease of remove some frequencies.
 
 .. figure:: images/tool_filter_frequencies.png
-   :alt: Filter frequency tool
+
+   Filter frequency tool
 
 .. note::
    This filter is not common since it cuts frequencies in a hard way.
@@ -156,7 +160,8 @@ Any blank area before the sample begins is eliminated. This reduces the time
 before the sound is heard.
 
 .. figure:: images/remove_blank.png
-   :alt: Remove blank at start
+
+   Remove blank at start
 
 .. note::
    This tool may be applied automatically each time a sample is imported,
@@ -171,7 +176,8 @@ The tool asks for a shift in semitones and then re-samples the sound to change
 the pitch.
 
 .. figure:: images/tool_transpose_smpl.png
-   :alt: Transpose tool
+
+   Transpose tool
 
 .. _sample tool trimloop:
 
@@ -182,7 +188,8 @@ If a loop is defined for the selected sample, the software will cut the sound
 after the end of the loop (leaving a small margin at the end).
 
 .. figure:: images/trim_to_loop.png
-   :alt: Trim to loop
+
+   Trim to loop
 
 .. note::
    This tool may be applied automatically each time a sample is imported,

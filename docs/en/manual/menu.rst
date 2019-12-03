@@ -7,7 +7,8 @@ The menu, located at the top right corner of the software, contains several
 items allowing you to access different features.
 
 .. figure:: images/menu.png
-   :alt: Menu
+
+   Menu
 
 .. _menu open:
 
@@ -35,7 +36,8 @@ Saving a soundfont
   Also accessible with the shortcut :kbd:`Ctrl+E`.
 
 .. figure:: images/export.png
-   :alt: Export window
+
+   Export window
 
 .. _menu view:
 

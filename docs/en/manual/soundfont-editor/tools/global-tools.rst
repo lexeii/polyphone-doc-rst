@@ -52,4 +52,5 @@ in a text. This text can be formatted to be integrated in a CSV file or in HTML
 to be integrated in a website.
 
 .. figure:: images/en_preset_list.png
-   :alt: Preset list
+
+   Preset list

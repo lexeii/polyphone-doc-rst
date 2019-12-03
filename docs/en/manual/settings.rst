@@ -47,7 +47,8 @@ Moreover, it is possible to check the following options:
   and velocity ranges) is edited the same.
 
 .. figure:: images/settings_general.png
-   :alt: Settings, general
+
+   Settings, general
 
 .. _interface settings:
 
@@ -70,7 +71,8 @@ This section shows options related to the interface of the software:
   the appearance of Polyphone. A manual selection of colors is also possible.
 
 .. figure:: images/settings_interface.png
-   :alt: Settings, interface
+
+   Settings, interface
 
 .. _sound settings:
 
@@ -83,7 +85,8 @@ changed with the volume :abbr:`MIDI (Musical Instrument Digital Interface)`
 controller if an external keyboard is connected.
 
 .. figure:: images/settings_sound.png
-   :alt: Settings, sound
+
+   Settings, sound
 
 .. _keyboard settings:
 
@@ -96,7 +99,8 @@ The keys of the computer keyboard used to control the
 by octave.
 
 .. figure:: images/settings_keyboard.png
-   :alt: Settings, keyboard
+
+   Settings, keyboard
 
 .. _repository settings:
 
@@ -110,4 +114,5 @@ The download directory used by the :ref:`soundfont browser <sf browser>`
 can be changed here.
 
 .. figure:: images/settings_repository.png
-   :alt: Settings, repository
+
+   Settings, repository

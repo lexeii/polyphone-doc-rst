@@ -20,7 +20,8 @@ When clicking on the :guilabel:`Samples` header of a soundfont in the
 :ref:`tree <tree>`, the sample configuration summary appears.
 
 .. figure:: images/conf_summary_sample.png
-   :alt: Sample configuration summary
+
+   Sample configuration summary
 
 For each sample, this page allows for example to perform the following checks:
 
@@ -39,7 +40,8 @@ When clicking on the :guilabel:`Instruments` header of a soundfont in the
 :ref:`tree <tree>`, the instrument configuration summary appears.
 
 .. figure:: images/conf_summary_instrument.png
-   :alt: Instrument configuration summary
+
+   Instrument configuration summary
 
 For each instrument, this page allows for example to perform the following
 checks:
@@ -60,7 +62,8 @@ When clicking on the :guilabel:`Presets` header of a soundfont in the
 :ref:`tree <tree>`, the preset configuration summary appears.
 
 .. figure:: images/conf_summary_preset.png
-   :alt: Preset configuration summary
+
+   Preset configuration summary
 
 For each preset, this page allows for example to perform the following checks:
 

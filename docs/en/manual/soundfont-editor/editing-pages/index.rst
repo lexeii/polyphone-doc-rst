@@ -17,7 +17,8 @@ elements are selected:
   the :ref:`preset editor <preset editor>`.
 
 .. figure:: images/editing_pages.png
-   :alt: Editing pages
+
+   Editing pages
 
 Contents:
 
