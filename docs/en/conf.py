@@ -199,8 +199,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'Polyphone.tex', u'Polyphone',
-   u'Polyphone', 'manual'),
+  ('index', 'Polyphone.tex', u'SoundFont Editor',
+   u'Davy Triponney', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
