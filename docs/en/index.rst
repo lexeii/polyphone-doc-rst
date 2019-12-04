@@ -1,12 +1,3 @@
-.. toctree::
-   :hidden:
-   :includehidden:
-
-   manual/index
-   tutorials/index
-
-
-
 About Polyphone
 ===============
 
@@ -51,3 +42,10 @@ soundtracks in mobile applications for instance) or improving the sf2 format
 to reach the sfz or proprietary formats capabilities. More than just a hobby,
 soundfonts could be seen as a viable and powerful open-source solution
 for advanced virtual instruments and for professional users.
+
+.. toctree::
+   :hidden:
+   :includehidden:
+
+   manual/index
+   tutorials/index
