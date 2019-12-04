@@ -15,10 +15,8 @@ on the kind of selection (as described below) but also on the number
 of selected elements. A few tools cannot process multiple elements so they
 will be hidden with a multiple selection.
 
-Contents:
-
 .. toctree::
-   :maxdepth: 2
+   :hidden:
 
    global-tools
    sample-tools

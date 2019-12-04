@@ -8,10 +8,8 @@ these pages puts you off, you may find assistance in the forum_, with
 for their useful videos). Extra information can also be found in the
 :ref:`annexes <annexes>`.
 
-Contents:
-
 .. toctree::
-   :maxdepth: 2
+   :hidden:
 
    home
    soundfont-editor/index

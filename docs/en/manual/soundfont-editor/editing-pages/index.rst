@@ -20,10 +20,9 @@ elements are selected:
 
    Editing pages
 
-Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :hidden:
 
    editing-of-the-general-information
    sample-editor
