@@ -184,12 +184,15 @@ htmlhelp_basename = 'Polyphonedoc'
 latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
 #'papersize': 'letterpaper',
+'papersize': 'a4paper',
 
 # The font size ('10pt', '11pt' or '12pt').
 #'pointsize': '10pt',
+'pointsize': '12pt',
 
 # Additional stuff for the LaTeX preamble.
 #'preamble': '',
+'preamble': r"""\pdfimageresolution=135""",
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
@@ -203,6 +206,7 @@ latex_documents = [
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
 #latex_logo = None
+latex_logo = '_static/logo.png'
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
@@ -213,6 +217,7 @@ latex_documents = [
 
 # If true, show URL addresses after external links.
 #latex_show_urls = False
+latex_show_urls = True
 
 # Documents to append as an appendix to all manuals.
 #latex_appendices = []
