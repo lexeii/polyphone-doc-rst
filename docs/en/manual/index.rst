@@ -1,12 +1,10 @@
 User manual
 ===========
 
-Welcome to the **User Manual** of Polyphone! You will learn here how to use
-every feature of the software. If you need more help, or if the reading of
-these pages puts you off, you may find assistance in the forum_, with
-:ref:`tutorials <tutorials>`, or on YouTube_ (special thanks to Polyphone users
-for their useful videos). Extra information can also be found in the
-:ref:`annexes <annexes>`.
+Welcome to the **User Manual** of Polyphone!
+You will learn here how to use every feature of the software.
+If you need more help, or if the reading of these pages puts you off, you may find assistance in the forum_, with :ref:`tutorials <tutorials>`, or on YouTube_ (special thanks to Polyphone users for their useful videos).
+Extra information can also be found in the :ref:`annexes <annexes>`.
 
 
 .. toctree::
@@ -19,7 +17,6 @@ for their useful videos). Extra information can also be found in the
    settings
    menu
    annexes/index
-
 
 
 .. external links:

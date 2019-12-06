@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # Polyphone documentation build configuration file, created by
-# sphinx-quickstart on Tue Aug 26 14:19:49 2014.
+# sphinx-quickstart on Thu Dec 5 16:10:36 2019.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -44,7 +44,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Polyphone'
-copyright = u'2019, Polyphone'
+copyright = u'2019, Davy Triponney'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -211,6 +211,7 @@ latex_logo = '_static/logo.png'
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
 #latex_use_parts = False
+latex_use_parts = True
 
 # If true, show page references after internal links.
 #latex_show_pagerefs = False
@@ -261,3 +262,73 @@ texinfo_documents = [
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
+
+
+# -- Options for Epub output ----------------------------------------------
+
+# Bibliographic Dublin Core info.
+epub_title = u'Polyphone'
+epub_author = u'Davy Triponney'
+epub_publisher = u'Davy Triponney'
+epub_copyright = u'2019, Davy Triponney'
+
+# The basename for the epub file. It defaults to the project name.
+#epub_basename = u'Polyphone'
+
+# The HTML theme for the epub output. Since the default themes are not optimized
+# for small screen space, using the same theme for HTML and epub output is
+# usually not wise. This defaults to 'epub', a theme designed to save visual
+# space.
+#epub_theme = 'epub'
+
+# The language of the text. It defaults to the language option
+# or en if the language is not set.
+#epub_language = 'en'
+
+# The scheme of the identifier. Typical schemes are ISBN or URL.
+#epub_scheme = ''
+
+# The unique identifier of the text. This can be a ISBN number
+# or the project homepage.
+#epub_identifier = ''
+
+# A unique identification for the text.
+#epub_uid = ''
+
+# A tuple containing the cover image and cover page html template filenames.
+#epub_cover = ()
+
+# A sequence of (type, uri, title) tuples for the guide element of content.opf.
+#epub_guide = ()
+
+# HTML files that should be inserted before the pages created by sphinx.
+# The format is a list of tuples containing the path and title.
+#epub_pre_files = []
+
+# HTML files shat should be inserted after the pages created by sphinx.
+# The format is a list of tuples containing the path and title.
+#epub_post_files = []
+
+# A list of files that should not be packed into the epub file.
+#epub_exclude_files = ['search.html']
+
+# The depth of the table of contents in toc.ncx.
+#epub_tocdepth = 3
+
+# Allow duplicate toc entries.
+#epub_tocdup = True
+
+# Choose between 'default' and 'includehidden'.
+#epub_tocscope = 'default'
+
+# Fix unsupported image types using the PIL.
+#epub_fix_images = False
+
+# Scale large images.
+#epub_max_image_width = 0
+
+# How to display URL addresses: 'footnote', 'no', or 'inline'.
+#epub_show_urls = 'inline'
+
+# If false, no index is generated.
+#epub_use_index = True
