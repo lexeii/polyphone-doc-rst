@@ -15,7 +15,7 @@ A lot of free samples can be found on internet, being either recorded from real 
 
 For this tutorial this flute sample is provided: :download:`flute.wav <https://www.polyphone-soundfonts.com/downloads/tutorials/flute.wav>`.
 
-Once you have it, create a new soundfont with Polyphone (:menuselection:`File --> New`) and import the sample (:menuselection:`File --> Import samples`).
+Once you have it, create a new soundfont with Polyphone (:menuselection:`Menu --> &New`) and import the sample (:guilabel:`Add a sample`).
 
 
 .. figure:: images/import-sample.png
@@ -65,7 +65,7 @@ Then, zoom around the beginning of the loop and try to superimpose the green (or
 Listening to the result
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-When the loop is configured, press :guilabel:`play` on the player with the loop enabled to check the result.
+When the loop is configured, press :guilabel:`play` on the player with the :guilabel:`loop` enabled to check the result.
 
 
 .. figure:: images/loop-sample-3.png
@@ -119,7 +119,7 @@ Here are examples containing the sound of a flute and a calibration sinus:
 * :download:`good tune <https://www.polyphone-soundfonts.com/downloads/tutorials/good-tune.mp3>` (both values are good)
 
 .. note::
-   The :ref:`frequency <sample editor frequency>` analysis can be a good indicator to start tuning.
+   The :ref:`frequency analysis <sample editor frequency>` can be a good indicator to start tuning.
    But keep in mind that no algorithm is perfect for this task and only your ears will find the right tune.
 
 
@@ -134,10 +134,10 @@ To go further
 Several tools are available in the menu :guilabel:`Tools`.
 You can edit samples by:
 
-* :ref:`removing blank <sample tool removeblank>` at start,
+* :ref:`removing blank at start <sample tool removeblank>`,
 * :ref:`equalizing <sample editor equalizer>` the sound,
 * :ref:`transposing <sample tool transpose>`,
-* :ref:`normalizing <sample tool volume>` the volume,
+* :ref:`normalizing the volume <sample tool volume>`,
 * :ref:`adjusting the balance <sample tool balance>` for stereo samples.
 
 
