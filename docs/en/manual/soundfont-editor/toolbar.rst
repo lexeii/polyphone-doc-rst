@@ -124,15 +124,15 @@ Markers and colors
 Useful shortcuts
 ~~~~~~~~~~~~~~~~
 
-:kbd:`Ctrl+K`
+:kbd:`Ctrl`\ +\ :kbd:`K`
   This shortcut can put at any time the focus on the virtual keyboard.
   This allows, while editing in a table for instance, to use the computer to play instead of edit a cell.
   A glow effect on the virtual keyboard confirms that the focus is on it.
 
-:kbd:`Ctrl+1`, :kbd:`Ctrl+2`, … :kbd:`Ctrl+8`
+:kbd:`Ctrl`\ +\ :kbd:`1`, :kbd:`Ctrl`\ +\ :kbd:`2`, … :kbd:`Ctrl`\ +\ :kbd:`8`
   These shortcuts change the octaves played with the computer keyboard.
-  After the use of :kbd:`Ctrl+1`, the lowest octave can be played.
-  The highest octave is reached using :kbd:`Ctrl+8`.
+  After the use of :kbd:`Ctrl`\ +\ :kbd:`1`, the lowest octave can be played.
+  The highest octave is reached using :kbd:`Ctrl`\ +\ :kbd:`8`.
 
 :kbd:`→` / :kbd:`←`
   The right or left arrow will play the pitch just next or below the last key that has been played, with the same velocity.

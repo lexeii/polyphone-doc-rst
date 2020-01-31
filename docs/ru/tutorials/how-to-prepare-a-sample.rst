@@ -78,7 +78,23 @@
 Прослушайте следующие записи, чтобы увидеть разницу между плохим и хорошим зацикливанием:
 
 * :download:`плохое зацикливание <https://www.polyphone-soundfonts.com/downloads/tutorials/bad-loop.mp3>`
+
+  .. raw:: html
+
+     <audio controls="controls">
+     <source src="https://www.polyphone-soundfonts.com/downloads/tutorials/bad-loop.mp3" type="audio/mpeg"/>
+     Ваш браузер не поддерживает элемент audio.
+     </audio>
+
 * :download:`хорошее зацикливание <https://www.polyphone-soundfonts.com/downloads/tutorials/good-loop.mp3>`
+
+  .. raw:: html
+
+     <audio controls="controls">
+     <source src="https://www.polyphone-soundfonts.com/downloads/tutorials/good-loop.mp3" type="audio/mpeg"/>
+     Ваш браузер не поддерживает элемент audio.
+     </audio>
+
 
 .. note::
    Есть способ, которое позволяет «сжульничать», если вам не удаётся легко найти петлю: средство :ref:`авто-петля <sample tool autoloop>`.
@@ -115,8 +131,33 @@
 Вот примеры, содержащие звук флейты и калибровочного синуса:
 
 * :download:`очень плохая настройка <https://www.polyphone-soundfonts.com/downloads/tutorials/very-bad-tune.mp3>` (корневая клавиша не настроена)
+
+  .. raw:: html
+
+     <audio controls="controls">
+     <source src="https://www.polyphone-soundfonts.com/downloads/tutorials/very-bad-tune.mp3" type="audio/mpeg"/>
+     Ваш браузер не поддерживает элемент audio.
+     </audio>
+
 * :download:`плохая настройка <https://www.polyphone-soundfonts.com/downloads/tutorials/bad-tune.mp3>` (коррекция неверна и можно услышать биения)
+
+  .. raw:: html
+
+     <audio controls="controls">
+     <source src="https://www.polyphone-soundfonts.com/downloads/tutorials/bad-tune.mp3" type="audio/mpeg"/>
+     Ваш браузер не поддерживает элемент audio.
+     </audio>
+
+
 * :download:`хорошая настройка <https://www.polyphone-soundfonts.com/downloads/tutorials/good-tune.mp3>` (оба значения правильны)
+
+  .. raw:: html
+
+     <audio controls="controls">
+     <source src="https://www.polyphone-soundfonts.com/downloads/tutorials/good-tune.mp3" type="audio/mpeg"/>
+     Ваш браузер не поддерживает элемент audio.
+     </audio>
+
 
 .. note::
    :ref:`Частотный анализ <sample editor frequency>` может быть хорошим индикатором для начала настройки.

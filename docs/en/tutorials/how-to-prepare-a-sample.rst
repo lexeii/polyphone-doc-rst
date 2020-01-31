@@ -78,7 +78,23 @@ Otherwise, keep the player on and slightly move the end and / or the beginning o
 Try the next records to see the difference between a bad and a good loop:
 
 * :download:`bad loop <https://www.polyphone-soundfonts.com/downloads/tutorials/bad-loop.mp3>`
+
+  .. raw:: html
+
+     <audio controls="controls">
+     <source src="https://www.polyphone-soundfonts.com/downloads/tutorials/bad-loop.mp3" type="audio/mpeg"/>
+     Your browser does not support the audio element.
+     </audio>
+
 * :download:`good loop <https://www.polyphone-soundfonts.com/downloads/tutorials/good-loop.mp3>`
+
+  .. raw:: html
+
+     <audio controls="controls">
+     <source src="https://www.polyphone-soundfonts.com/downloads/tutorials/good-loop.mp3" type="audio/mpeg"/>
+     Your browser does not support the audio element.
+     </audio>
+
 
 .. note::
    A tool exists to “cheat” if you cannot find a loop easily: the :ref:`auto-loop <sample tool autoloop>` tool.
@@ -115,8 +131,32 @@ For this step, pay attention to any beats that occur and make sure they are as s
 Here are examples containing the sound of a flute and a calibration sinus:
 
 * :download:`very bad tune <https://www.polyphone-soundfonts.com/downloads/tutorials/very-bad-tune.mp3>` (the root key doesn't match)
+
+  .. raw:: html
+
+     <audio controls="controls">
+     <source src="https://www.polyphone-soundfonts.com/downloads/tutorials/very-bad-tune.mp3" type="audio/mpeg"/>
+     Your browser does not support the audio element.
+     </audio>
+
 * :download:`bad tune <https://www.polyphone-soundfonts.com/downloads/tutorials/bad-tune.mp3>` (the correction is not correct and you can hear beats)
+
+  .. raw:: html
+
+     <audio controls="controls">
+     <source src="https://www.polyphone-soundfonts.com/downloads/tutorials/bad-tune.mp3" type="audio/mpeg"/>
+     Your browser does not support the audio element.
+     </audio>
+
 * :download:`good tune <https://www.polyphone-soundfonts.com/downloads/tutorials/good-tune.mp3>` (both values are good)
+
+  .. raw:: html
+
+     <audio controls="controls">
+     <source src="https://www.polyphone-soundfonts.com/downloads/tutorials/good-tune.mp3" type="audio/mpeg"/>
+     Your browser does not support the audio element.
+     </audio>
+
 
 .. note::
    The :ref:`frequency analysis <sample editor frequency>` can be a good indicator to start tuning.
