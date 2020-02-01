@@ -24,20 +24,20 @@ Editing functions
 The elements in the left part of the toolbar are for common editing functions:
 
 |sample| New sample
-  Add new :ref:`samples <sample editor>` to the soundfont.
+  |br| Add new :ref:`samples <sample editor>` to the soundfont.
   A dialog will be displayed for selecting audio files (``.wav`` and ``.flac`` files can be imported).
 |instrument| New instrument
-  Create a new :ref:`instrument <instrument editor>`.
+  |br| Create a new :ref:`instrument <instrument editor>`.
 |preset| New preset
-  Create a new :ref:`preset <preset editor>`.
+  |br| Create a new :ref:`preset <preset editor>`.
 |tools| Tools
-  Clicking on this button will show a menu containing all available :ref:`tools <tool menu>` for the selected element(s) in the :ref:`tree <tree>`.
+  |br| Clicking on this button will show a menu containing all available :ref:`tools <tool menu>` for the selected element(s) in the :ref:`tree <tree>`.
 |undo| Undo
-  Undo the last modification.
+  |br| Undo the last modification.
 |redo| Redo
-  Redo the last undone modification.
+  |br| Redo the last undone modification.
 |save| Save file
-  Save the soundfont.
+  |br| Save the soundfont.
 
 
 .. _toolbar view:
@@ -125,21 +125,21 @@ Useful shortcuts
 ~~~~~~~~~~~~~~~~
 
 :kbd:`Ctrl`\ +\ :kbd:`K`
-  This shortcut can put at any time the focus on the virtual keyboard.
+  |br| This shortcut can put at any time the focus on the virtual keyboard.
   This allows, while editing in a table for instance, to use the computer to play instead of edit a cell.
   A glow effect on the virtual keyboard confirms that the focus is on it.
 
 :kbd:`Ctrl`\ +\ :kbd:`1`, :kbd:`Ctrl`\ +\ :kbd:`2`, … :kbd:`Ctrl`\ +\ :kbd:`8`
-  These shortcuts change the octaves played with the computer keyboard.
+  |br| These shortcuts change the octaves played with the computer keyboard.
   After the use of :kbd:`Ctrl`\ +\ :kbd:`1`, the lowest octave can be played.
   The highest octave is reached using :kbd:`Ctrl`\ +\ :kbd:`8`.
 
 :kbd:`→` / :kbd:`←`
-  The right or left arrow will play the pitch just next or below the last key that has been played, with the same velocity.
+  |br| The right or left arrow will play the pitch just next or below the last key that has been played, with the same velocity.
   The association of the key :kbd:`Shift` skips keys.
 
 :kbd:`↑` / :kbd:`↓`
-  The up or down arrow will play the same pitch than the last key played, but with a stronger or weaker velocity.
+  |br| The up or down arrow will play the same pitch than the last key played, but with a stronger or weaker velocity.
   The association of the key :kbd:`Shift` skips velocities.
 
 
@@ -195,3 +195,8 @@ This area is made of different buttons:
    :scale: 50%
 .. |piano|      image:: images/toolbar_piano.*
    :scale: 50%
+
+
+.. |br| raw:: latex
+
+        \mbox{}\newline

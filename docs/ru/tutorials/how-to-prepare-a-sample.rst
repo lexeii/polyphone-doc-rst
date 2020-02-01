@@ -148,7 +148,6 @@
      Ваш браузер не поддерживает элемент audio.
      </audio>
 
-
 * :download:`хорошая настройка <https://www.polyphone-soundfonts.com/downloads/tutorials/good-tune.mp3>` (оба значения правильны)
 
   .. raw:: html

@@ -275,4 +275,22 @@ Samples have to be tuned regardless the definition of the instrument (via the :r
 An option allows the automatic loop of created samples, another sets the creation interval of samples.
 Finally, it is possible to choose the type of the created sounds: mono or stereo.
 
-Here is an example, :download:`before <https://www.polyphone-soundfonts.com/downloads/tutorials/mixture_base.mp3>` and :download:`after <https://www.polyphone-soundfonts.com/downloads/tutorials/mixture_done.mp3>`.
+Here is an example:
+
+* :download:`before <https://www.polyphone-soundfonts.com/downloads/tutorials/mixture_base.mp3>`
+
+  .. raw:: html
+
+     <audio controls="controls">
+     <source src="https://www.polyphone-soundfonts.com/downloads/tutorials/mixture_base.mp3" type="audio/mpeg"/>
+     Your browser does not support the audio element.
+     </audio>
+
+* :download:`after <https://www.polyphone-soundfonts.com/downloads/tutorials/mixture_done.mp3>`
+
+  .. raw:: html
+
+     <audio controls="controls">
+     <source src="https://www.polyphone-soundfonts.com/downloads/tutorials/mixture_done.mp3" type="audio/mpeg"/>
+     Your browser does not support the audio element.
+     </audio>

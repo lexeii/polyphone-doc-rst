@@ -100,4 +100,19 @@
 А здесь вы можете услышать разницу между классическим и заказным затуханием:
 
 * :download:`классическое затухание <https://www.polyphone-soundfonts.com/downloads/tutorials/classic-release.mp3>`
+
+  .. raw:: html
+
+     <audio controls="controls">
+     <source src="https://www.polyphone-soundfonts.com/downloads/tutorials/classic-release.mp3" type="audio/mpeg"/>
+     Ваш браузер не поддерживает элемент audio.
+     </audio>
+
 * :download:`заказное затухание  <https://www.polyphone-soundfonts.com/downloads/tutorials/custom-release.mp3>`
+
+  .. raw:: html
+
+     <audio controls="controls">
+     <source src="https://www.polyphone-soundfonts.com/downloads/tutorials/custom-release.mp3" type="audio/mpeg"/>
+     Ваш браузер не поддерживает элемент audio.
+     </audio>

@@ -101,28 +101,28 @@ This can be a single element or a multiple selection made possible with the butt
 Then, the result of a drag & drop depends on the kind of elements that are dragged and the kind of element that is targeted.
 
 Sample → instrument
-  Association of the sample to the instrument, creation of an instrument division.
+  |br| Association of the sample to the instrument, creation of an instrument division.
 
 Sample → header :guilabel:`Instruments`
-  Creation of an instrument that contains all samples dragged or creation of one instrument per sample dragged.
+  |br| Creation of an instrument that contains all samples dragged or creation of one instrument per sample dragged.
 
 Instrument → preset
-  Association of the instrument to the preset, creation of a preset division.
+  |br| Association of the instrument to the preset, creation of a preset division.
 
 Instrument → instrument
-  Copy of all divisions of the source instrument into the destination instrument (it can be the same instrument).
+  |br| Copy of all divisions of the source instrument into the destination instrument (it can be the same instrument).
 
 Instrument division → instrument or instrument division
-  Copy of the division of the source instrument into the destination instrument (it can be the same instrument).
+  |br| Copy of the division of the source instrument into the destination instrument (it can be the same instrument).
 
 Instrument → header :guilabel:`Presets`
-  Creation of a preset that contains all instruments dragged or creation of one preset per instrument dragged.
+  |br| Creation of a preset that contains all instruments dragged or creation of one preset per instrument dragged.
 
 Preset → preset
-  Copy of all divisions of the source preset into the destination preset (it can be the same preset).
+  |br| Copy of all divisions of the source preset into the destination preset (it can be the same preset).
 
 Preset division → preset or preset division
-  Copy of the division of the source preset into the destination preset (it can be the same preset).
+  |br| Copy of the division of the source preset into the destination preset (it can be the same preset).
 
 
 .. index:: tree; copy / paste
@@ -139,13 +139,13 @@ It is possible to copy one element in a first soundfont, and paste it in a secon
 A multiple selection is allowed.
 
 Sample(s) selected
-  Copy of the samples.
+  |br| Copy of the samples.
 
 Instrument(s) selected
-  Copy of the instruments including all samples linked.
+  |br| Copy of the instruments including all samples linked.
 
 Preset(s) selected
-  Copy of the presets including all instruments and samples linked.
+  |br| Copy of the presets including all instruments and samples linked.
 
 During a copy of elements between different soundfonts, if an element having the same name already exists several options are provided:
 
@@ -176,3 +176,10 @@ Moreover:
 * if the string is included in the name of a preset, the instruments used by the preset and the samples used by the instruments used by the preset are displayed.
 
 A click on the cross to the right of the editable field cancels the filter.
+
+
+
+
+.. |br| raw:: latex
+
+        \mbox{}\newline

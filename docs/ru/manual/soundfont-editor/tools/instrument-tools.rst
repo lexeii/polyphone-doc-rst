@@ -275,4 +275,22 @@
 Один параметр позволяет выполнять автоматическое создание петель семплов, другой устанавливает интервал создания семплов.
 Наконец, можно выбрать тип создаваемых звуков: моно или стерео.
 
-Вот пример: :download:`до <https://www.polyphone-soundfonts.com/downloads/tutorials/mixture_base.mp3>` и :download:`после <https://www.polyphone-soundfonts.com/downloads/tutorials/mixture_done.mp3>`.
+Вот пример:
+
+* :download:`до <https://www.polyphone-soundfonts.com/downloads/tutorials/mixture_base.mp3>`
+
+  .. raw:: html
+
+     <audio controls="controls">
+     <source src="https://www.polyphone-soundfonts.com/downloads/tutorials/mixture_base.mp3" type="audio/mpeg"/>
+     Ваш браузер не поддерживает элемент audio.
+     </audio>
+
+* :download:`после <https://www.polyphone-soundfonts.com/downloads/tutorials/mixture_done.mp3>`
+
+  .. raw:: html
+
+     <audio controls="controls">
+     <source src="https://www.polyphone-soundfonts.com/downloads/tutorials/mixture_done.mp3" type="audio/mpeg"/>
+     Ваш браузер не поддерживает элемент audio.
+     </audio>

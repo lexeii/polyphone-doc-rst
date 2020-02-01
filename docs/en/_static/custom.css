@@ -95,13 +95,9 @@ body {
 
 .rst-content .guilabel,
 .rst-content .menuselection {
-	border: 1px solid #e3ae7f;
+	border-color: #e3ae7f;
 	background: #faf0e7;
-	font-size: 80%;
-	font-weight: 700;
-	border-radius: 4px;
-	padding: 2.4px 6px;
-	margin: auto 2px;
+	font-size: 90%;
 }
 
 .wy-table td,

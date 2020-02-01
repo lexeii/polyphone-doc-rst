@@ -100,4 +100,19 @@ The result with the example files is :download:`here <https://www.polyphone-soun
 You can listen here the differences between a classical and a custom release:
 
 * :download:`classic release <https://www.polyphone-soundfonts.com/downloads/tutorials/classic-release.mp3>`
+
+  .. raw:: html
+
+     <audio controls="controls">
+     <source src="https://www.polyphone-soundfonts.com/downloads/tutorials/classic-release.mp3" type="audio/mpeg"/>
+     Your browser does not support the audio element.
+     </audio>
+
 * :download:`custom release  <https://www.polyphone-soundfonts.com/downloads/tutorials/custom-release.mp3>`
+
+  .. raw:: html
+
+     <audio controls="controls">
+     <source src="https://www.polyphone-soundfonts.com/downloads/tutorials/custom-release.mp3" type="audio/mpeg"/>
+     Your browser does not support the audio element.
+     </audio>

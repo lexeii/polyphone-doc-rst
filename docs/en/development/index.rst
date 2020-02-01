@@ -11,20 +11,20 @@ If something is not up to date, don't hesitate to report it in the forum_.
 
 ----
 
-:ref:`build for mac`:
-  Instructions to build Polyphone for Mac OS X.
+:ref:`build for mac`
+  |br| Instructions to build Polyphone for Mac OS X.
 
-:ref:`build for fedora`:
-  Instructions to build Polyphone on Fedora (verified: Aug 7, 2016 on Fedora 24, 64bit).
+:ref:`build for fedora`
+  |br| Instructions to build Polyphone on Fedora (verified: Aug 7, 2016 on Fedora 24, 64bit).
 
-:ref:`build for ubuntu`:
-  Instructions to build Polyphone with Ubuntu.
+:ref:`build for ubuntu`
+  |br| Instructions to build Polyphone with Ubuntu.
 
-:ref:`build with qt creator`:
-  Instructions to build Polyphone with Qt Creator.
+:ref:`build with qt creator`
+  |br| Instructions to build Polyphone with Qt Creator.
 
-:ref:`translate`:
-  For all people willing to see Polyphone in their own language.
+:ref:`translate`
+  |br| For all people willing to see Polyphone in their own language.
 
 
 .. toctree::
@@ -41,3 +41,10 @@ If something is not up to date, don't hesitate to report it in the forum_.
 
 .. _by GitHub: https://github.com/davy7125/polyphone
 .. _forum:     https://www.polyphone-soundfonts.com/en/forum
+
+
+
+
+.. |br| raw:: latex
+
+        \mbox{}\newline

@@ -47,7 +47,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Polyphone'
-copyright = u'2019, Davy Triponney.'
+copyright = u'2020, Davy Triponney.'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -144,9 +144,6 @@ html_static_path = ['_static']
 html_css_files = [
     'custom.css',
 ]
-
-def setup(app):
-    app.add_stylesheet('custom.css')
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
